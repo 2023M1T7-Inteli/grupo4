@@ -1,2 +1,0 @@
-# Inspirações
-# AAAAA
