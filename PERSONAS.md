@@ -10,9 +10,11 @@ Alagoas
 #### Formação
 Professores da Licenciatura em Matemática e da Pedagogia da Universidade Federal de Alagoas
 
-## Necessidades
-
 ## Dores
+- Tem dificuldade com tecnologia
+- Quantidade limitada de computadores e smartphones para a sala de aula
+- Não sabe como fazer a aplicação pedagogica dos jogos
+- Gasta muito tempo ensinando
 
 ## Experiência Ideal
 
@@ -20,6 +22,7 @@ Professores da Licenciatura em Matemática e da Pedagogia da Universidade Federa
 
 ## Bio
 
+---
 
 # Aluno
 ### Idade
@@ -29,11 +32,10 @@ Professores da Licenciatura em Matemática e da Pedagogia da Universidade Federa
 Estudante
 
 ### Localidade
-Alagoas, Escola publicas
-
-## Necessidades
+Alagoas, Escolas publicas
 
 ## Dores
+- Falta de acesso a computadores e/ou smartphones
 
 ## Experiência Ideal
 
