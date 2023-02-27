@@ -14,7 +14,7 @@ func _physics_process(delta):
 	elif(Input.is_action_pressed("ui_up")):
 		$AnimationPlayer.play("cima")
 	else:
-		$AnimationPlayer.stop()
+		$AnimationPlayer.stop('RESET')
 	move_and_slide(vectorMovement*50)
 	
 

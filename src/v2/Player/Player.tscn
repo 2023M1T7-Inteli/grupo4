@@ -108,7 +108,6 @@ editor_draw_drag_margin = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 159, 154 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 disabled = true
 
