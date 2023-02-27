@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="godot tutorial"
-run/main_scene="res://world.tscn"
+run/main_scene="res://tela inicial completa/starSreen.tscn"
 
 [display]
 
