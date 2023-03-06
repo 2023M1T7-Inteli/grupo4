@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://global_shadow.png" type="Texture" id=5]
 [ext_resource path="res://free.png" type="Texture" id=6]
 [ext_resource path="res://free version.png" type="Texture" id=7]
+[ext_resource path="res://pixil-frame-0 (10).png" type="Texture" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_all.png 0"
@@ -115,6 +116,29 @@
 4/shape_one_way_margin = 0.0
 4/shapes = [  ]
 4/z_index = 0
+5/name = "pixil-frame-0 (10).png 5"
+5/texture = ExtResource( 8 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 64, 328, 263, 241 )
+5/tile_mode = 1
+5/autotile/bitmask_mode = 0
+5/autotile/bitmask_flags = [  ]
+5/autotile/icon_coordinate = Vector2( 0, 0 )
+5/autotile/tile_size = Vector2( 32, 32 )
+5/autotile/spacing = 0
+5/autotile/occluder_map = [  ]
+5/autotile/navpoly_map = [  ]
+5/autotile/priority_map = [  ]
+5/autotile/z_index_map = [  ]
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
 
 [sub_resource type="TileSet" id=3]
 0/name = "buildings_all.png 0"
@@ -521,7 +545,7 @@ polygon = PoolVector2Array( 77, 141, 146, 141, 151, 145, 151, 154, 151, 159, 149
 polygon = PoolVector2Array( 195, -24, 229, -56, 233, -56, 266, -24, 267, 0, 262, 3, 260, 18, 202, 18, 199, 1 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 340, 69, 412, 69, 415, 117, 413, 118, 410, 142, 343, 142, 340, 115, 336, 113 )
+polygon = PoolVector2Array( 339, 81, 414, 81, 415, 117, 413, 118, 410, 142, 343, 142, 340, 115, 336, 113 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 465, 61, 534, 61, 539, 68, 539, 73, 535, 97, 533, 114, 466, 114, 466, 99, 463, 96, 460, 72 )

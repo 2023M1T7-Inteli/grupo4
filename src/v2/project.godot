@@ -13,6 +13,10 @@ config_version=4
 config/name="godot tutorial"
 run/main_scene="res://tela inicial completa/starSreen.tscn"
 
+[autoload]
+
+Global="*res://Puzzle/Global.gd"
+
 [display]
 
 window/size/test_width=1280
