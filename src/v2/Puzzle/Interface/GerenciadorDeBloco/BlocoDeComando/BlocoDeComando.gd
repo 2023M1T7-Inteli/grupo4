@@ -1,11 +1,11 @@
 extends Control
 
 export(String) var title
-export(String) var id
+export(int) var id
 
 func _ready():
 	$title.text = title
 
 
 func _on_delete_pressed():
-	pass # Replace with function body.
+	get_tree().get_root().get_child(1).get_child(1)._removeTask(id)

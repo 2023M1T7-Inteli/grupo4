@@ -39,12 +39,16 @@ func run(currentTask):
 	if (x == 'walk'):
 		if (directions[currentDirection] == 'up'):
 			target.y -= 36
+			$Sprite.play("up")
 		elif (directions[currentDirection] == 'down'):
 			target.y += 36
+			$Sprite.play("down")
 		elif (directions[currentDirection] == 'right'):
 			target.x += 36
+			$Sprite.play("right")
 		elif (directions[currentDirection] == 'left'):
 			target.x -= 36
+			$Sprite.play("left")
 			
 		# Set player velocity according to target and speed
 		velocity = position.direction_to(target) * speed
@@ -68,6 +72,7 @@ func _physics_process(delta):
 		# If the distance is less than 5
 	else:
 		# Save that player is NOT moving
+		$Sprite.play("idle")
 		moving = false
 
 func _on_Play_pressed():

@@ -18,12 +18,13 @@ func update_list():
 	delete_children($TaskList)
 	print(tasks)
 	# Loopa pela lista de tasks
-	for x in tasks:
+	for x in len(tasks):
 		# Cria uma nova task
 		var task_scene = load("res://Puzzle/Interface/GerenciadorDeBloco/BlocoDeComando/BlocoDeComando.tscn").instance()
 		
 		# Atualiza propriedades do novo node
-		task_scene.title = x
+		task_scene.title = tasks[x]
+		task_scene.id = x
 		
 		# Adiciona ele como filho do Container Vertical
 		$TaskList.add_child(task_scene)
@@ -45,8 +46,17 @@ func _addTask(task):
 	# Chama a função que atualiza a lista
 	update_list()
 
+func _removeTask(id):
+	# Deleta task no global
+	get_node("/root/Global").removeTask(id)
+	
+	tasks = get_node("/root/Global").tasks
+	
+	# Chama a função que atualiza a lista
+	update_list()
+
 func _on_AddTask_pressed():
-	var moves = load("res://Puzzle/Interface/AdicionarBloco/AdicionarBloco.tscn")
+	var moves = load("res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn")
 	var moves_instance = moves.instance()
 	moves_instance.set_name('moves')
 	get_tree().get_root().add_child(moves_instance)

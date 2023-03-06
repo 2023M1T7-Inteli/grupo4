@@ -10,6 +10,9 @@ func _ready():
 func addTask(task):
 	print(task)
 	tasks.append(task)
+	
+func removeTask(id):
+	tasks.remove(id)
 
 func goto_scene(path):
 	# This function will usually be called from a signal callback,
