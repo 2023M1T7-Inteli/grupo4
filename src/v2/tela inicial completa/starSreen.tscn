@@ -46,8 +46,8 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="bgd" type="Sprite" parent="."]
-position = Vector2( 157.625, 91.1875 )
-scale = Vector2( 0.338086, 0.280462 )
+position = Vector2( 513.813, 301.094 )
+scale = Vector2( 0.800293, 0.724865 )
 texture = ExtResource( 3 )
 
 [node name="ColorRect" type="ColorRect" parent="."]

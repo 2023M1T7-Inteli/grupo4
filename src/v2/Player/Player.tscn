@@ -97,9 +97,10 @@ anims/esquerda = SubResource( 6 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 159, 154 )
 current = true
+zoom = Vector2( 0.3, 0.3 )
 limit_left = 0
-limit_top = -45
-limit_right = 640
+limit_top = -145
+limit_right = 670
 limit_bottom = 330
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
