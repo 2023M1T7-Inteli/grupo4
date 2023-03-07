@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Puzzle/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Puzzle/Fase1/Mapa.gd" type="Script" id=2]
 [ext_resource path="res://Puzzle/Interface/GerenciadorDeBloco/GerenciadorDeBloco.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Bau/bau.tscn" type="PackedScene" id=4]
 [ext_resource path="res://pixil-fase 1.png" type="Texture" id=5]
 [ext_resource path="res://pixil-barco.png" type="Texture" id=6]
 [ext_resource path="res://background-fase1.jpeg" type="Texture" id=7]
@@ -106,14 +105,15 @@ margin_left = 3.0
 margin_right = 1022.0
 margin_bottom = 607.0
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-z_index = 1
-
 [node name="GerenciadorDeBlocos" parent="." instance=ExtResource( 3 )]
 margin_left = 808.0
 margin_top = 68.0
 margin_right = 944.0
 margin_bottom = 232.0
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 112 )
+z_index = 1
 
 [node name="Play" type="Button" parent="."]
 margin_left = 821.0
@@ -123,10 +123,6 @@ margin_bottom = 52.0
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Rodar Comandos"
-
-[node name="bau" parent="." instance=ExtResource( 4 )]
-position = Vector2( 128, 88 )
-scale = Vector2( 4, 4 )
 
 [node name="Sprite" type="Sprite" parent="."]
 z_index = -1
@@ -143,4 +139,11 @@ tile_set = SubResource( 1 )
 format = 1
 tile_data = PoolIntArray( 262146, 1, 0, 262148, 2, 0, 262150, 3, 0, 262152, 4, 0, 262154, 5, 0 )
 
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 784.0
+margin_top = 512.0
+margin_right = 864.0
+margin_bottom = 600.0
+
 [connection signal="pressed" from="Play" to="Player" method="_on_Play_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

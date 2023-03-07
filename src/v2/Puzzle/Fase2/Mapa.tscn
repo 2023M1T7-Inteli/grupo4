@@ -1,0 +1,171 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Puzzle/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Puzzle/Fase2/Mapa.gd" type="Script" id=2]
+[ext_resource path="res://Puzzle/Interface/GerenciadorDeBloco/GerenciadorDeBloco.tscn" type="PackedScene" id=3]
+[ext_resource path="res://pixil-fase 1.png" type="Texture" id=5]
+[ext_resource path="res://pixil-barco.png" type="Texture" id=6]
+[ext_resource path="res://background-fase1.jpeg" type="Texture" id=7]
+[ext_resource path="res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn" type="PackedScene" id=8]
+
+[sub_resource type="TileSet" id=1]
+0/name = "pixil-fase 1.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 192, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "pixil-fase 1.png 1"
+1/texture = ExtResource( 5 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 192, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "pixil-fase 1.png 2"
+2/texture = ExtResource( 5 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 192, 192, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "pixil-fase 1.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 320, 192, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "pixil-fase 1.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 448, 192, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "pixil-barco.png 5"
+5/texture = ExtResource( 6 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 480, 64, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 624, 256 )
+b = Vector2( 144, 256 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 144, 352 )
+b = Vector2( 144, 256 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 608, 336 )
+b = Vector2( 144, 336 )
+
+[node name="Mapa" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AdicionarBloco" parent="." instance=ExtResource( 8 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 3.0
+margin_right = 1022.0
+margin_bottom = 607.0
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 112 )
+z_index = 1
+
+[node name="GerenciadorDeBlocos" parent="." instance=ExtResource( 3 )]
+margin_left = 808.0
+margin_top = 68.0
+margin_right = 944.0
+margin_bottom = 232.0
+
+[node name="Play" type="Button" parent="."]
+margin_left = 821.0
+margin_top = 32.0
+margin_right = 940.0
+margin_bottom = 52.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Rodar Comandos"
+
+[node name="Sprite" type="Sprite" parent="."]
+z_index = -1
+
+[node name="Background-fase1" type="Sprite" parent="Sprite"]
+position = Vector2( 512, 303 )
+scale = Vector2( 0.64, 0.677778 )
+z_index = -1
+texture = ExtResource( 7 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 262146, 1, 0, 262148, 2, 0, 262150, 3, 0, 262152, 4, 0, 262154, 5, 0 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 4 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2"]
+polygon = PoolVector2Array( 144, 256, 608, 256, 608, 336, 144, 336, 144, 272, 128, 272, 128, 352, 624, 352, 624, 240, 144, 240 )
+
+[connection signal="pressed" from="Play" to="Player" method="_on_Play_pressed"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

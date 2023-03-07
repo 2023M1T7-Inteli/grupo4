@@ -38,16 +38,16 @@ func run(currentTask):
 		rotate(x)
 	if (x == 'walk'):
 		if (directions[currentDirection] == 'up'):
-			target.y -= 36
+			target.y -= 70
 			$Sprite.play("up")
 		elif (directions[currentDirection] == 'down'):
-			target.y += 36
+			target.y += 70
 			$Sprite.play("down")
 		elif (directions[currentDirection] == 'right'):
-			target.x += 36
+			target.x += 70
 			$Sprite.play("right")
 		elif (directions[currentDirection] == 'left'):
-			target.x -= 36
+			target.x -= 70
 			$Sprite.play("left")
 			
 		# Set player velocity according to target and speed
@@ -55,7 +55,7 @@ func run(currentTask):
 		
 	print(tasks[currentTask])
 	if (currentTask + 1 < len(tasks)):
-		yield(get_tree().create_timer(1), "timeout")
+		yield(get_tree().create_timer(1.5), "timeout")
 		run(currentTask + 1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -78,3 +78,4 @@ func _physics_process(delta):
 func _on_Play_pressed():
 	tasks = get_node("/root/Global").tasks
 	playing = true
+

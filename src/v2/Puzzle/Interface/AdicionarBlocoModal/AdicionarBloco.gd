@@ -25,5 +25,5 @@ func _on_Rotate_pressed():
 	addTask('rotate')
 
 func _on_Close_pressed():
-	visible = false
+	self.visible = false
 	pass
