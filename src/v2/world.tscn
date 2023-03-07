@@ -542,19 +542,19 @@ tile_data = PoolIntArray( -917456, 1, 0, 720922, 0, 0, 983155, 3, 0, 1114196, 2,
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 113, 115, 158, 115, 162, 100, 166, 100, 165, 74, 138, 45, 132, 45, 106, 73, 105, 100, 109, 99 )
+polygon = PoolVector2Array( 113, 115, 158, 115, 162, 100, 166, 100, 165, 74, 158, 66, 114, 65, 106, 73, 105, 100, 109, 99 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 77, 141, 146, 141, 151, 145, 151, 154, 151, 159, 149, 160, 150, 171, 149, 171, 149, 177, 147, 180, 146, 189, 146, 193, 146, 196, 79, 196, 79, 194, 77, 180, 75, 177, 74, 171, 74, 160, 73, 153, 72, 147 )
+polygon = PoolVector2Array( 73, 153, 150, 153, 151, 152, 151, 154, 151, 159, 149, 160, 150, 171, 149, 171, 149, 177, 147, 180, 146, 189, 146, 193, 146, 196, 79, 196, 79, 194, 77, 180, 75, 177, 74, 171, 74, 160, 73, 153, 73, 154 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 195, -24, 229, -56, 233, -56, 266, -24, 267, 0, 262, 3, 260, 18, 202, 18, 199, 1 )
+polygon = PoolVector2Array( 195, -24, 212, -39, 257, -39, 266, -24, 267, 0, 262, 3, 260, 18, 202, 18, 199, 1 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 339, 81, 414, 81, 415, 117, 413, 118, 410, 142, 343, 142, 340, 115, 336, 113 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 465, 61, 534, 61, 539, 68, 539, 73, 535, 97, 533, 114, 466, 114, 466, 99, 463, 96, 460, 72 )
+polygon = PoolVector2Array( 460, 71, 539, 71, 539, 75, 539, 73, 535, 97, 533, 114, 466, 114, 466, 99, 463, 96, 460, 72 )
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 2, 39, 4, 33, 4, 29, 5, 23, 5, 16, 7, 10, 11, 7, 15, 6, 19, 3, 20, 2, 21, 0, 21, -1, 21, -4, 23, -6, 25, -6, 26, -8, 28, -9, 30, -9, 32, -10, 33, -13, 36, -15, 39, -17, 38, -22, 47, -28, 52, -31, 54, -36, 57, -40, 61, -43, 64, -44, 70, -48, 1, -47 )
@@ -588,3 +588,4 @@ scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 8 )
 
 [connection signal="body_entered" from="placa/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="placa/Area2D" to="." method="_on_Area2D_body_exited"]

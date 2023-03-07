@@ -82,7 +82,7 @@ tracks/0/keys = {
 
 [sub_resource type="CapsuleShape2D" id=5]
 radius = 5.0
-height = 0.0
+height = 8.0
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -108,7 +108,7 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 159, 160 )
+position = Vector2( 159, 154 )
 shape = SubResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
