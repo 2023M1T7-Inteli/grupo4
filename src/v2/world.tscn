@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://pixil-frame-0 (10).png" type="Texture" id=8]
 [ext_resource path="res://imagem_2023-03-06_153002257-removebg-preview.png" type="Texture" id=9]
 [ext_resource path="res://world.gd" type="Script" id=10]
+[ext_resource path="res://pixil-placa F1.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_all.png 0"
@@ -575,6 +576,13 @@ shape = SubResource( 6 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 7 )
 
+[node name="placaF1" type="Sprite" parent="."]
+position = Vector2( 646, 99 )
+scale = Vector2( 0.265625, 0.322222 )
+texture = ExtResource( 11 )
+
+[node name="Area2D" type="Area2D" parent="placaF1"]
+
 [node name="placa" type="Sprite" parent="."]
 position = Vector2( 201, 112 )
 scale = Vector2( 0.03, 0.03 )
@@ -587,5 +595,7 @@ position = Vector2( -16.6655, 16.6655 )
 scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 8 )
 
+[connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
+[connection signal="area_shape_entered" from="placaF1/Area2D" to="." method="_on_Area2D_area_shape_entered"]
 [connection signal="body_entered" from="placa/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="placa/Area2D" to="." method="_on_Area2D_body_exited"]
