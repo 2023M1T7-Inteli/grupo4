@@ -14,7 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-# Fecha o modal para adicionar tasks
-func _closeModal():
-	get_tree().get_root().get_child(2).queue_free()

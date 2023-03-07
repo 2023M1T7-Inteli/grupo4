@@ -56,7 +56,4 @@ func _removeTask(id):
 	update_list()
 
 func _on_AddTask_pressed():
-	var moves = load("res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn")
-	var moves_instance = moves.instance()
-	moves_instance.set_name('moves')
-	get_tree().get_root().add_child(moves_instance)
+	get_parent().get_node("AdicionarBloco").visible = true

@@ -13,7 +13,7 @@ func _ready():
 
 # Adiciona task
 func addTask(task):
-	get_parent().get_child(1).get_child(1)._addTask(task)
+	get_parent().get_node("GerenciadorDeBlocos")._addTask(task)
 
 func _on_RotateCounter_pressed():
 	addTask('rotate_counter')
@@ -25,5 +25,5 @@ func _on_Rotate_pressed():
 	addTask('rotate')
 
 func _on_Close_pressed():
-	get_parent().get_child(1)._closeModal()
+	visible = false
 	pass
