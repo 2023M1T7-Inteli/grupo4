@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Puzzle/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Puzzle/Fase1/Mapa.gd" type="Script" id=2]
@@ -94,6 +94,9 @@
 5/shapes = [  ]
 5/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23.25, 39.625 )
+
 [node name="Mapa" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -145,5 +148,18 @@ margin_top = 512.0
 margin_right = 864.0
 margin_bottom = 600.0
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( 144, 288, 144, 352, 608, 352, 608, 240, 144, 240, 144, 272, 128, 272, 128, 224, 624, 224, 624, 368, 128, 368, 128, 288 )
+
+[node name="vitoria" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vitoria"]
+position = Vector2( 592, 296.375 )
+shape = SubResource( 2 )
+
 [connection signal="pressed" from="Play" to="Player" method="_on_Play_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="vitoria" to="." method="_on_vitoria_body_entered"]

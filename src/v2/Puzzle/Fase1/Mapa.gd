@@ -19,3 +19,12 @@ func _ready():
 func _on_TextureButton_pressed():
 	get_tree().change_scene("res://world.tscn")
 	
+
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
+
+
+func _on_vitoria_body_entered(body):
+	get_tree().change_scene("res://tela inicial completa/starSreen.tscn")
