@@ -34,8 +34,7 @@ func rotate(command):
 			currentDirection += 1
 			
 func run(currentTask):
-	var x = tasks[currentTask] # corrigir isso logo
-	# o galo falou para que quando o botão rodar comandos for acionados sem nenhum comando previo, ele só ignore esse comando
+	var x = tasks[currentTask]
 	
 	if (x == 'rotate' || x == 'rotate_counter'):
 		rotate(x)
@@ -63,7 +62,7 @@ func run(currentTask):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	if (playing == true):
+	if (playing == true && len(tasks) >= 1):
 		run(0)
 		playing = false
 		# If the distance between the player and where it is going is more than 5
