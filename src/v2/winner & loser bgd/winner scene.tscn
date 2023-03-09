@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://imagens/background vitoria.jpeg" type="Texture" id=1]
 [ext_resource path="res://winner & loser bgd/winner scene.gd" type="Script" id=2]
 [ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://imagens/pixelCasinha.png" type="Texture" id=4]
+[ext_resource path="res://imagens/bordaCurta.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 23
@@ -85,21 +86,41 @@ rect_pivot_offset = Vector2( 1173.5, 541 )
 color = Color( 1, 1, 1, 0.168627 )
 
 [node name="bgdWinner2" type="Sprite" parent="."]
-position = Vector2( 283, -16 )
+position = Vector2( 271, -40 )
 scale = Vector2( 0.615625, 0.64625 )
 texture = ExtResource( 1 )
 offset = Vector2( 373.604, 493.617 )
+
+[node name="BordaCurta" type="Sprite" parent="."]
+position = Vector2( 551, 284 )
+scale = Vector2( 1.63419, 1 )
+texture = ExtResource( 5 )
+
+[node name="BordaCurta2" type="Sprite" parent="."]
+position = Vector2( 763, 312 )
+scale = Vector2( 2.93382, 1 )
+texture = ExtResource( 5 )
+
+[node name="BordaCurta3" type="Sprite" parent="."]
+position = Vector2( 502, 312 )
+scale = Vector2( 2.93382, 1 )
+texture = ExtResource( 5 )
+
+[node name="BordaCurta4" type="Sprite" parent="."]
+position = Vector2( 428, 312 )
+scale = Vector2( 2.93382, 1 )
+texture = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -365.0
-margin_top = -114.0
-margin_right = 371.0
-margin_bottom = -28.0
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+margin_left = -352.0
+margin_top = -125.0
+margin_right = 384.0
+margin_bottom = -39.0
+custom_colors/font_color = Color( 0.0352941, 0.0901961, 0.913725, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -108,17 +129,27 @@ Você passou para a proxima fase!"
 align = 1
 valign = 1
 
+[node name="BordaCurta5" type="Sprite" parent="."]
+position = Vector2( 312, 462 )
+scale = Vector2( 1.91268, 1 )
+texture = ExtResource( 5 )
+
+[node name="BordaCurta6" type="Sprite" parent="."]
+position = Vector2( 816.5, 461 )
+scale = Vector2( 2.00919, 1 )
+texture = ExtResource( 5 )
+
 [node name="btnRestart" type="Button" parent="."]
-margin_left = 633.0
+margin_left = 634.0
 margin_top = 339.0
-margin_right = 905.0
+margin_right = 906.0
 margin_bottom = 422.0
 theme = SubResource( 8 )
-custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
-custom_colors/font_color_focus = Color( 1, 0.027451, 0.027451, 1 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 1, 0.027451, 0.027451, 1 )
-custom_colors/font_color_pressed = Color( 0.913725, 0.988235, 0.0235294, 1 )
+custom_colors/font_color_disabled = Color( 0.913725, 0.219608, 0.0352941, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0.913725, 0.219608, 0.0352941, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.988235, 0.521569, 0.0235294, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Reiniciar Fase 1"
 
@@ -128,16 +159,16 @@ margin_top = 339.0
 margin_right = 385.0
 margin_bottom = 422.0
 theme = SubResource( 13 )
-custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
-custom_colors/font_color_focus = Color( 0.0509804, 0.976471, 0.0235294, 1 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 0.0509804, 0.976471, 0.0235294, 1 )
-custom_colors/font_color_pressed = Color( 0.913725, 0.988235, 0.0235294, 1 )
+custom_colors/font_color_disabled = Color( 0.72549, 0.105882, 0.717647, 1 )
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0.72549, 0.105882, 0.717647, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.988235, 0.521569, 0.0235294, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Ir para Fase 2"
 
 [node name="imgMap" type="Sprite" parent="."]
-position = Vector2( 536, 466 )
+position = Vector2( 536, 451 )
 scale = Vector2( 0.283951, 0.252142 )
 texture = ExtResource( 4 )
 

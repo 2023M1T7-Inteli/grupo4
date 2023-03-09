@@ -8,7 +8,7 @@
 [ext_resource path="res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 23.25, 39.625 )
+extents = Vector2( 14.625, 29.3125 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "pixil-fase 1.png 0"
@@ -361,6 +361,20 @@ extents = Vector2( 23.25, 39.625 )
 24/shape_one_way_margin = 0.0
 24/shapes = [  ]
 24/z_index = 0
+25/name = "pixil-fase 1.png 25"
+25/texture = ExtResource( 5 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 64, 192, 512, 96 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape_one_way = false
+25/shape_one_way_margin = 0.0
+25/shapes = [  ]
+25/z_index = 0
 
 [node name="Mapa" type="Node2D"]
 script = ExtResource( 2 )
@@ -416,15 +430,16 @@ polygon = PoolVector2Array( 144, 288, 144, 352, 608, 352, 608, 240, 144, 240, 14
 [node name="vitoria" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vitoria"]
-position = Vector2( 256, 304 )
+position = Vector2( 590, 295 )
 shape = SubResource( 2 )
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -2
 tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
-tile_data = PoolIntArray( 524292, 0, 0, 524293, 4, 0, 524294, 8, 0, 524295, 12, 0, 524296, 15, 0, 524297, 12, 0, 524298, 15, 0, 524299, 12, 0, 524300, 15, 0, 524301, 12, 0, 524302, 15, 0, 524303, 12, 0, 524304, 24, 0, 524305, 18, 0, 589828, 1, 0, 589829, 5, 0, 589830, 9, 0, 589831, 13, 0, 589832, 16, 0, 589833, 13, 0, 589834, 16, 0, 589835, 13, 0, 589836, 16, 0, 589837, 13, 0, 589838, 16, 0, 589839, 13, 0, 589840, 23, 0, 589841, 19, 0, 655364, 2, 0, 655365, 6, 0, 655366, 10, 0, 655367, 14, 0, 655368, 17, 0, 655369, 14, 0, 655370, 17, 0, 655371, 14, 0, 655372, 17, 0, 655373, 14, 0, 655374, 17, 0, 655375, 14, 0, 655376, 22, 0, 655377, 20, 0, 720900, 3, 0, 720901, 7, 0, 720902, 11, 0, 720912, 21, 0, 786436, 3, 0 )
+tile_data = PoolIntArray( 524292, 25, 0, 720900, 3, 0, 720901, 7, 0, 720902, 11, 0, 720912, 21, 0, 786436, 3, 0 )
 
 [connection signal="pressed" from="Play" to="Player" method="_on_Play_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
