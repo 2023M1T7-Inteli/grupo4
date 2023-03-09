@@ -13,47 +13,35 @@ onready var target = position
 # Saves if player is in motion
 onready var moving = false
 
-# Defines possible directions
-var directions = ['right', 'up', 'left', 'down']
-var currentDirection = 0
+func start():
+	playing = true
+	tasks = get_node("/root/Global").tasks
+	print('AAAAAAAAAAAAA')
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	get_node("/root/Global").connect("playing", self, "start")
 	
-func rotate(command):
-	if (command == 'rotate_counter'):
-		if (currentDirection == 0):
-			currentDirection = 3
-		else:
-			currentDirection -= 1
-	elif (command == 'rotate'):
-		if (currentDirection == 3):
-			currentDirection == 0
-		else:
-			currentDirection += 1
 			
 func run(currentTask):
 	var x = tasks[currentTask]
 	
-	if (x == 'rotate' || x == 'rotate_counter'):
-		rotate(x)
-	if (x == 'walk'):
-		if (directions[currentDirection] == 'up'):
+	match(x):
+		"up":
 			target.y -= tilemap
 			$Sprite.play("up")
-		elif (directions[currentDirection] == 'down'):
+		"down":
 			target.y += tilemap
 			$Sprite.play("down")
-		elif (directions[currentDirection] == 'right'):
-			target.x += tilemap
-			$Sprite.play("right")
-		elif (directions[currentDirection] == 'left'):
+		"left":
 			target.x -= tilemap
 			$Sprite.play("left")
+		"right":
+			target.x += tilemap
+			$Sprite.play("right")
 			
-		# Set player velocity according to target and speed
-		velocity = position.direction_to(target) * speed
+	# Set player velocity according to target and speed
+	velocity = position.direction_to(target) * speed
 		
 	print(tasks[currentTask])
 	if (currentTask + 1 < len(tasks)):
@@ -63,6 +51,7 @@ func run(currentTask):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	if (playing == true && len(tasks) >= 1):
+		print("running")
 		run(0)
 		playing = false
 		# If the distance between the player and where it is going is more than 5
@@ -76,8 +65,3 @@ func _physics_process(delta):
 		# Save that player is NOT moving
 		$Sprite.play("idle")
 		moving = false
-
-func _on_Play_pressed():
-	tasks = get_node("/root/Global").tasks
-	playing = true
-

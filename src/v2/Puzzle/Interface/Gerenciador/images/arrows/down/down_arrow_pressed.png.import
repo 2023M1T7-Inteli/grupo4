@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/up_arrow.png-738a03846269d0489e39369ab2edb551.stex"
+path="res://.import/down_arrow_pressed.png-af407d6d0180b9082f4167530f633613.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Puzzle/Interface/Gerenciador/up_arrow.png"
-dest_files=[ "res://.import/up_arrow.png-738a03846269d0489e39369ab2edb551.stex" ]
+source_file="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow_pressed.png"
+dest_files=[ "res://.import/down_arrow_pressed.png-af407d6d0180b9082f4167530f633613.stex" ]
 
 [params]
 
