@@ -396,8 +396,8 @@ text = "Rodar Comandos"
 z_index = -1
 
 [node name="Background-fase1" type="Sprite" parent="Sprite"]
-position = Vector2( 512, 303 )
-scale = Vector2( 0.64, 0.677778 )
+position = Vector2( 512, 363.5 )
+scale = Vector2( 0.64, 0.812222 )
 z_index = -1
 texture = ExtResource( 7 )
 
