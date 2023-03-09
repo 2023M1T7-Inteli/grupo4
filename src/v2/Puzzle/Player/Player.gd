@@ -5,6 +5,7 @@ var tasks = []
 
 var velocity = Vector2()
 export (int) var speed = 72
+var tilemap = 32
 
 # Saves where player is going to
 onready var target = position
@@ -33,21 +34,23 @@ func rotate(command):
 			currentDirection += 1
 			
 func run(currentTask):
-	var x = tasks[currentTask]
+	var x = tasks[currentTask] # corrigir isso logo
+	# o galo falou para que quando o botão rodar comandos for acionados sem nenhum comando previo, ele só ignore esse comando
+	
 	if (x == 'rotate' || x == 'rotate_counter'):
 		rotate(x)
 	if (x == 'walk'):
 		if (directions[currentDirection] == 'up'):
-			target.y -= 70
+			target.y -= tilemap
 			$Sprite.play("up")
 		elif (directions[currentDirection] == 'down'):
-			target.y += 70
+			target.y += tilemap
 			$Sprite.play("down")
 		elif (directions[currentDirection] == 'right'):
-			target.x += 70
+			target.x += tilemap
 			$Sprite.play("right")
 		elif (directions[currentDirection] == 'left'):
-			target.x -= 70
+			target.x -= tilemap
 			$Sprite.play("left")
 			
 		# Set player velocity according to target and speed

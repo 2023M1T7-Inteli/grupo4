@@ -1,12 +1,13 @@
 extends Area2D
 
-var playerRef
+var playerRef 
 var x = false
 var isOpen = false
 
 func _on_bau_body_entered(body):
 	print(body)
 	x = true
+#
 	if body.is_in_group('Player'):
 		playerRef = body
 		x = true

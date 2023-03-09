@@ -1,6 +1,7 @@
 extends Node2D
 #precarrega uma cena.
-var preloadMensagem = preload("res://Control.tscn").instance()
+var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
+
 
 func _on_placaTutorial_body_entered(body):
 	#chama uma cena flutuante

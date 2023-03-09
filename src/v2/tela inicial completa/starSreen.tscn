@@ -2,7 +2,7 @@
 
 [ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://tela inicial completa/starSreen.gd" type="Script" id=2]
-[ext_resource path="res://mapaTela.imagem.jpeg" type="Texture" id=3]
+[ext_resource path="res://imagens/mapaTela.imagem.jpeg" type="Texture" id=3]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )

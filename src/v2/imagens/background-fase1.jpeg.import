@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/background-fase1.jpeg-a92b45235a53dbd8c2f1c9be80f7da59.stex"
+path="res://.import/background-fase1.jpeg-e5c380208f3bf62b59d965c6182fd5c5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background-fase1.jpeg"
-dest_files=[ "res://.import/background-fase1.jpeg-a92b45235a53dbd8c2f1c9be80f7da59.stex" ]
+source_file="res://imagens/background-fase1.jpeg"
+dest_files=[ "res://.import/background-fase1.jpeg-e5c380208f3bf62b59d965c6182fd5c5.stex" ]
 
 [params]
 

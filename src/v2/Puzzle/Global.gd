@@ -1,7 +1,7 @@
 extends Node
 
 var current_scene = null
-var tasks = ['walk']
+var tasks = []
 
 func _ready():
 	var root = get_tree().get_root()
@@ -10,6 +10,9 @@ func _ready():
 func addTask(task):
 	print(task)
 	tasks.append(task)
+	
+func resetList():
+	tasks = []
 	
 func removeTask(id):
 	tasks.remove(id)

@@ -29,6 +29,10 @@ func update_list():
 		# Adiciona ele como filho do Container Vertical
 		$TaskList.add_child(task_scene)
 
+# Reseta todas as tasks
+func resetList():
+	get_node("/root/Global").resetList()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
