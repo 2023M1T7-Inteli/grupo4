@@ -86,7 +86,7 @@ rect_pivot_offset = Vector2( 1173.5, 541 )
 color = Color( 1, 1, 1, 0.168627 )
 
 [node name="bgdWinner2" type="Sprite" parent="."]
-position = Vector2( 271, -31 )
+position = Vector2( 271, -40 )
 scale = Vector2( 0.615625, 0.64625 )
 texture = ExtResource( 1 )
 offset = Vector2( 373.604, 493.617 )
@@ -168,7 +168,7 @@ custom_fonts/font = SubResource( 3 )
 text = "Ir para Fase 2"
 
 [node name="imgMap" type="Sprite" parent="."]
-position = Vector2( 536, 466 )
+position = Vector2( 536, 451 )
 scale = Vector2( 0.283951, 0.252142 )
 texture = ExtResource( 4 )
 
