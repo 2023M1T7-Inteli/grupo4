@@ -1,0 +1,125 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/add.png" type="Texture" id=1]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow.png" type="Texture" id=2]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow_pressed.png" type="Texture" id=3]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow_pressed.png" type="Texture" id=4]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow.png" type="Texture" id=5]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow_pressed.png" type="Texture" id=6]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/right/right_arrow.png" type="Texture" id=7]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow.png" type="Texture" id=8]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/right/right_arrow_pressed.png" type="Texture" id=9]
+[ext_resource path="res://Puzzle/Interface/AddButton/AddButton.gd" type="Script" id=10]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 112 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "slide"
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 112 ), Vector2( 0, -400 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "slide_down"
+tracks/0/type = "value"
+tracks/0/path = NodePath("VBoxContainer:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -400 ), Vector2( 0, 112 ) ]
+}
+
+[node name="Add" type="TextureButton"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -92.0
+margin_right = 92.0
+texture_normal = ExtResource( 1 )
+script = ExtResource( 10 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_top = 112.0
+margin_right = 92.0
+margin_bottom = 492.0
+rect_pivot_offset = Vector2( 0, -508 )
+
+[node name="ArrowLeft" type="TextureButton" parent="VBoxContainer"]
+show_behind_parent = true
+margin_right = 92.0
+margin_bottom = 92.0
+rect_pivot_offset = Vector2( 32, -59 )
+shortcut_in_tooltip = false
+action_mode = 0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+
+[node name="ArrowRight" type="TextureButton" parent="VBoxContainer"]
+show_behind_parent = true
+margin_top = 96.0
+margin_right = 92.0
+margin_bottom = 188.0
+rect_pivot_offset = Vector2( 32, -59 )
+shortcut_in_tooltip = false
+action_mode = 0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 9 )
+
+[node name="ArrowUp" type="TextureButton" parent="VBoxContainer"]
+show_behind_parent = true
+margin_top = 192.0
+margin_right = 92.0
+margin_bottom = 284.0
+rect_pivot_offset = Vector2( 32, -59 )
+shortcut_in_tooltip = false
+action_mode = 0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+
+[node name="ArrowDown" type="TextureButton" parent="VBoxContainer"]
+show_behind_parent = true
+margin_top = 288.0
+margin_right = 92.0
+margin_bottom = 380.0
+rect_pivot_offset = Vector2( 32, -59 )
+shortcut_in_tooltip = false
+action_mode = 0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/slide = SubResource( 2 )
+anims/slide_down = SubResource( 3 )
+
+[connection signal="pressed" from="." to="." method="_on_Add_pressed"]
+[connection signal="pressed" from="VBoxContainer/ArrowLeft" to="." method="_on_ArrowLeft_pressed"]
+[connection signal="pressed" from="VBoxContainer/ArrowRight" to="." method="_on_ArrowRight_pressed"]
+[connection signal="pressed" from="VBoxContainer/ArrowUp" to="." method="_on_ArrowUp_pressed"]
+[connection signal="pressed" from="VBoxContainer/ArrowDown" to="." method="_on_ArrowDown_pressed"]
