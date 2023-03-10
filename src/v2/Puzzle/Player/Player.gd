@@ -5,7 +5,7 @@ var tasks = []
 
 var velocity = Vector2()
 export (int) var speed = 72
-var tilemap = 32
+var tilemap = 70
 
 # Saves where player is going to
 onready var target = position

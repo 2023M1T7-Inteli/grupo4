@@ -32,3 +32,7 @@ func _on_Play_pressed():
 # Reseta todas as tasks
 func resetList():
 	get_node("/root/Global").resetList()
+
+
+func _on_returnMap_pressed():
+	get_tree().change_scene("res://world.tscn")

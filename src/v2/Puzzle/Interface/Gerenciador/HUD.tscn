@@ -129,5 +129,14 @@ margin_bottom = 557.0
 rect_scale = Vector2( 1.814, 1.793 )
 texture_normal = ExtResource( 6 )
 
+[node name="returnMap" type="TextureButton" parent="."]
+anchor_right = 0.02
+anchor_bottom = 0.033
+margin_left = 843.0
+margin_top = 509.0
+margin_right = 910.52
+margin_bottom = 572.2
+
 [connection signal="pressed" from="TextureRect/Arrow" to="." method="_on_Arrow_pressed"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="returnMap" to="." method="_on_returnMap_pressed"]
