@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://imagens/imagem_2023-03-06_153002257-removebg-preview.png" type="Texture" id=9]
 [ext_resource path="res://world.gd" type="Script" id=10]
 [ext_resource path="res://imagens/pixil-placa F1.png" type="Texture" id=11]
+[ext_resource path="res://imagens/pixil-frame-0 (1).png" type="Texture" id=12]
+[ext_resource path="res://imagens/portas.png" type="Texture" id=13]
+[ext_resource path="res://portas 2.png" type="Texture" id=14]
+[ext_resource path="res://casas sem portas.png" type="Texture" id=15]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_all.png 0"
@@ -143,6 +147,64 @@
 5/shapes = [  ]
 5/z_index = 0
 
+[sub_resource type="TileSet" id=10]
+0/name = "portas.png 0"
+0/texture = ExtResource( 13 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 23, 105, 17, 23 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "portas.png 1"
+1/texture = ExtResource( 13 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 96, 108, 15, 20 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "portas 2.png 2"
+2/texture = ExtResource( 14 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 112, 157, 16, 20 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "portas 2.png 3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 31, 44, 18, 20 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
 [sub_resource type="TileSet" id=3]
 0/name = "buildings_all.png 0"
 0/texture = ExtResource( 4 )
@@ -186,6 +248,20 @@
 2/shape_one_way_margin = 0.0
 2/shapes = [  ]
 2/z_index = 0
+3/name = "casas sem portas.png 3"
+3/texture = ExtResource( 15 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 4, 80, 60 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
 
 [sub_resource type="TileSet" id=2]
 1/name = "tiles_all.png 1"
@@ -484,6 +560,62 @@
 3/shape_one_way_margin = 0.0
 3/shapes = [  ]
 3/z_index = 0
+4/name = "pixil-frame-0 (1).png 4"
+4/texture = ExtResource( 12 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 53, 63, 75 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "pixil-frame-0 (1).png 5"
+5/texture = ExtResource( 12 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 63, 53, 79, 75 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "casas sem portas.png 6"
+6/texture = ExtResource( 15 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 79, 94, 81, 82 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "casas sem portas.png 7"
+7/texture = ExtResource( 15 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 80, 5, 80, 59 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
 
 [sub_resource type="SegmentShape2D" id=5]
 a = Vector2( 3, 379 )
@@ -527,6 +659,12 @@ position = Vector2( 46, -3 )
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( -2, -2 )
 
+[node name="portas" type="TileMap" parent="."]
+tile_set = SubResource( 10 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( -65315, 1, 0, 6029439, 0, 0, 6488555, 3, 0, 8061297, 2, 0, 11534439, 3, 0 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1, -1 )
 __meta__ = {
@@ -538,7 +676,7 @@ tile_set = SubResource( 3 )
 cell_size = Vector2( 4, 4 )
 cell_tile_origin = 1
 format = 1
-tile_data = PoolIntArray( 2293778, 536870912, 0 )
+tile_data = PoolIntArray( 2228242, 3, 0 )
 
 [node name="arvores" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
@@ -550,25 +688,25 @@ tile_data = PoolIntArray( -524268, 3, 0, -458721, 12, 0, -458706, 13, 0, -393193
 tile_set = SubResource( 4 )
 cell_size = Vector2( 4, 4 )
 format = 1
-tile_data = PoolIntArray( -917456, 1, 0, 720922, 0, 0, 983155, 3, 0, 1114196, 2, 0 )
+tile_data = PoolIntArray( -917457, 5, 0, 655386, 4, 0, 983124, 6, 0, 983155, 7, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 1, 0 )
-polygon = PoolVector2Array( 113, 115, 158, 115, 162, 100, 166, 100, 165, 74, 158, 66, 114, 65, 106, 73, 105, 100, 109, 99 )
+polygon = PoolVector2Array( 113, 115, 127.326, 115, 127, 93, 134, 93, 141, 93, 142, 115, 158, 115, 162, 100, 166, 100, 165, 74, 158, 66, 114, 65, 106, 73, 105, 100, 109, 99 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 73, 153, 150, 153, 151, 152, 151, 154, 151, 159, 149, 160, 150, 171, 149, 171, 149, 177, 147, 180, 146, 189, 146, 193, 146, 196, 79, 196, 79, 194, 77, 180, 75, 177, 74, 171, 74, 160, 73, 153, 73, 154 )
+polygon = PoolVector2Array( 73, 153, 150, 153, 151, 152, 151, 154, 151, 159, 149, 160, 150, 171, 149, 171, 149, 177, 147, 180, 146, 189, 146, 193, 146, 195, 120, 194, 120, 177, 103, 177, 103, 196, 79, 196, 79, 194, 77, 180, 75, 177, 74, 171, 74, 160, 73, 153, 73, 154 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 195, -24, 212, -39, 257, -39, 266, -24, 267, 0, 262, 3, 260, 18, 202, 18, 199, 1 )
+polygon = PoolVector2Array( 195, -24, 207, -37, 252, -37, 265, -25, 264, -1, 262, 3, 258, 19, 236, 18, 236, 0, 222, 0, 222, 18, 200, 18, 199, 11, 199, 1, 195, -1 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 339, 81, 414, 81, 415, 117, 413, 118, 410, 142, 343, 142, 340, 115, 336, 113 )
+polygon = PoolVector2Array( 339, 74, 414, 74, 415, 117, 413, 118, 410, 138, 388, 138, 388, 142, 384, 142, 384, 124, 370, 124, 370.021, 141.777, 366, 142, 366, 139, 343, 139, 340, 115, 336, 113 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 460, 71, 539, 71, 539, 75, 539, 73, 535, 97, 533, 114, 466, 114, 466, 99, 463, 96, 460, 72 )
+polygon = PoolVector2Array( 460, 71, 539, 71, 539, 75, 539, 73, 535, 97, 533, 118, 509, 118, 509, 100, 491, 100, 491, 118, 466, 118, 466, 99, 463, 96, 460, 72 )
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 2, 39, 4, 33, 4, 29, 5, 23, 5, 16, 7, 10, 11, 7, 15, 6, 19, 3, 20, 2, 21, 0, 21, -1, 21, -4, 23, -6, 25, -6, 26, -8, 28, -9, 30, -9, 32, -10, 33, -13, 36, -15, 39, -17, 38, -22, 47, -28, 52, -31, 54, -36, 57, -40, 61, -43, 64, -44, 70, -48, 1, -47 )
