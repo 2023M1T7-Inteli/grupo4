@@ -1,19 +1,5 @@
 extends CanvasLayer
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-#func _ready():
-#	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 func _on_Arrow_pressed():
 	pass
 
@@ -24,15 +10,14 @@ func _on_ArrowDown_pressed():
 	$TextureRect/AnimationPlayer.play()
 	pass
 
-
+# play the game
 func _on_Play_pressed():
 	get_node('/root/Global').start()
-	pass # Replace with function body.
-
-# Reseta todas as tasks
+	
+# Reset all tasks
 func resetList():
 	get_node("/root/Global").resetList()
 
-
+# change scene to maps scene
 func _on_returnMap_pressed():
 	get_tree().change_scene("res://world.tscn")

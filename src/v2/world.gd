@@ -1,19 +1,16 @@
 extends Node2D
-#precarrega uma cena.
+#preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
 
 
 func _on_placaTutorial_body_entered(body):
-	#chama uma cena flutuante ao entrar na área de colisão
+# invoke a floating scene when entering the collision area
 	get_tree().current_scene.add_child(preloadMensagem)
 	
 func _on_placaTutorial_body_exited(body):
-	#remove a cena flutuante aonde sair da área de colisão
+#remove the floating scene where you exit the collision area
 	get_tree().current_scene.remove_child(preloadMensagem)
 	
-
-
-
 func _on_PlacaFase1_body_entered(body):
-	#cena que contem o texto.
+# change scene to mapa scene
 	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")

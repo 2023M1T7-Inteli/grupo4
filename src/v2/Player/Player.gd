@@ -1,12 +1,12 @@
 extends KinematicBody2D
 
 func _physics_process(delta):
-	#Velocidade do jogador
+	#player speed
 	var vectorMovement = Vector2.ZERO
-	#Definir a direção do personagem
+	#Define player direction
 	vectorMovement.x =Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	vectorMovement.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	#Muda a animação conforme a direção do personagem muda
+	#change the animation while change the player direction
 	if(Input.is_action_pressed("ui_right")):
 		$AnimationPlayer.play("direita")
 	elif(Input.is_action_pressed("ui_left")):
@@ -16,9 +16,9 @@ func _physics_process(delta):
 	elif(Input.is_action_pressed("ui_up")):
 		$AnimationPlayer.play("cima")
 	else:
-		#Para o personagem
+		#stop the player
 		$AnimationPlayer.stop()
-		#Movimenta o personagem
+		#Move the player
 	move_and_slide(vectorMovement*50)
 	
 
