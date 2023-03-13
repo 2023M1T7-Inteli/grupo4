@@ -17,7 +17,7 @@
 Meu projeto é um exemplo de como utilizar o github.
 <br><br>
 <p align="center">
-<img src="![image](https://user-images.githubusercontent.com/123956275/224795681-b80e85b5-4e40-4031-ab8c-109d81bfaa69.png)" alt="NOME DO JOGO" border="0">
+<img src=![image](https://user-images.githubusercontent.com/123956275/224795681-b80e85b5-4e40-4031-ab8c-109d81bfaa69.png) alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
