@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -629,6 +629,10 @@ b = Vector2( 641, -51 )
 a = Vector2( 1, 322 )
 b = Vector2( 442, 321 )
 
+[sub_resource type="SegmentShape2D" id=11]
+a = Vector2( 140, 271 )
+b = Vector2( 130, 271 )
+
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 46.4118, 39.1379 )
 
@@ -726,6 +730,106 @@ shape = SubResource( 6 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 7 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2, 0 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -46, -1 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 120, -8 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 56, -47 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 120, -48 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -119, -88 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -46, -56 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 216, 8 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 250, 32 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 282, 7 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 298, -15 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 216, -56 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 248, -95 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 175, -87 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 322, -120 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 89, -112 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2, -57 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 402, -17 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -102, -128 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -119, -153 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -102, -184 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -32, -184 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 105, -144 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 170, -136 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 169, -168 )
+shape = SubResource( 11 )
 
 [node name="placaF1" type="Sprite" parent="."]
 position = Vector2( 598, 115 )
