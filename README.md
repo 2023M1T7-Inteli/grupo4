@@ -8,7 +8,7 @@
 
 ## Nome do Grupo
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">André Hutzler</a>, <a href="https://www.linkedin.com/in/victorbarq/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/victorbarq/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/victorbarq/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/victorbarq/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>
 
 ## Descrição
 
