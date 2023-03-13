@@ -35,8 +35,14 @@ func switchChest():
 func _process(delta) -> void:
 	#Está função verifica se a ação "ui_accpet" foi precionada e se "x" é true. Se ambos forem verdadeiros, alternar entre abrir e fechar o baú
 	if Input.is_action_just_pressed("ui_accept"):
-		if x == true:
-			switchChest()
+		get_tree().change_scene("res://ContaSoma.tscn")
+	#	if x == true:
+	#		switchChest()
+			
+func contaMat():
+	pass
+		
+		
 
 
 

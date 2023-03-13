@@ -46,7 +46,7 @@ script = ExtResource( 5 )
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.996094, 0.143967, 0.143967, 0.168627 )
+color = Color( 0.996078, 0.145098, 0.145098, 0.168627 )
 
 [node name="BackgroundVitoria" type="Sprite" parent="."]
 position = Vector2( 514.35, 299 )
