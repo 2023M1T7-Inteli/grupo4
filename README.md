@@ -1,7 +1,7 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "![image](https://user-images.githubusercontent.com/123956275/225089717-3d403496-a5f0-426c-bb66-46ab1495783d.png)" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # Projeto Alaventura
