@@ -16,6 +16,7 @@ run/main_scene="res://tela inicial completa/starSreen.tscn"
 [autoload]
 
 Global="*res://Puzzle/Global.gd"
+Controls="*res://Interface/Interface.gd"
 
 [display]
 

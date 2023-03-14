@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://imagens/portas.png" type="Texture" id=13]
 [ext_resource path="res://portas 2.png" type="Texture" id=14]
 [ext_resource path="res://casas sem portas.png" type="Texture" id=15]
+[ext_resource path="res://Interface/Interface.tscn" type="PackedScene" id=16]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_all.png 0"
@@ -853,6 +854,8 @@ texture = ExtResource( 9 )
 position = Vector2( -50, 233.333 )
 scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 8 )
+
+[node name="GridContainer" parent="." instance=ExtResource( 16 )]
 
 [connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]
