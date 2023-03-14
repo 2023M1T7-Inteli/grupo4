@@ -1,7 +1,7 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a href= "![image](https://user-images.githubusercontent.com/123956275/225089717-3d403496-a5f0-426c-bb66-46ab1495783d.png)" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://s3.amazonaws.com/gupy5/production/companies/26702/images/jobs/2537199/20220705010027980_picture.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # Projeto Alaventura
