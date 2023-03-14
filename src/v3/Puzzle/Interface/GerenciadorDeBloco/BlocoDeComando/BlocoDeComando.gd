@@ -1,11 +1,11 @@
 extends Control
 
 export(String) var title
-export(String) var id
+export(int) var id
 
 func _ready():
 	$title.text = title
 
-
 func _on_delete_pressed():
-	pass # Replace with function body.
+	# Vai pegar nodes acima e acionar a função para remover a task presente no 2 acima
+	get_parent().get_parent()._removeTask(id)

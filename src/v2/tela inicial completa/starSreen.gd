@@ -1,20 +1,21 @@
 extends Control
 
 func _ready():
-	#focus on the start button
+	#Foca no primeiro botão
 	$controls/startBtn.grab_focus()
 
+
 func _on_startBtn_pressed():
-# change scene to the main map
+	#Muda a cena para o mapa principal
 	get_tree().change_scene("res://world.tscn")
 
 func _on_controlsBtn_pressed():
-# change scene to the settings scene
+	#Muda a cena para configurções 
 	var controlScreen = load("res://tela inicial completa/controlsScreen.tscn").instance()
 	get_tree().current_scene.add_child(controlScreen)
 
 
 func _on_quitBtn_pressed():
-#quit the game
+	#Fecha o jogo
 	get_tree().quit()
 	

@@ -1,24 +1,30 @@
 extends KinematicBody2D
 
+onready var touch_down = get_node("/root/Controls").touch_down
+onready var touch_up = get_node("/root/Controls").touch_up
+onready var touch_right = get_node("/root/Controls").touch_right
+onready var touch_left = get_node("/root/Controls").touch_left
+
 func _physics_process(delta):
-	#Velocidade do jogador
+	#player speed
 	var vectorMovement = Vector2.ZERO
-	#Definir a direção do personagem
+	#Define player direction
 	vectorMovement.x =Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	vectorMovement.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
-	#Muda a animação conforme a direção do personagem muda
-	if(Input.is_action_pressed("ui_right")):
+	#change the animation while change the player direction
+	if(Input.is_action_pressed("ui_right") or touch_right):
 		$AnimationPlayer.play("direita")
-	elif(Input.is_action_pressed("ui_left")):
+	elif(Input.is_action_pressed("ui_left") or touch_left):
+		print('ok')
 		$AnimationPlayer.play("esquerda")
-	elif(Input.is_action_pressed("ui_down")):
+	elif(Input.is_action_pressed("ui_down") or touch_down):
 		$AnimationPlayer.play("baixo")
-	elif(Input.is_action_pressed("ui_up")):
+	elif(Input.is_action_pressed("ui_up") or touch_up):
 		$AnimationPlayer.play("cima")
 	else:
-		#Para o personagem
+		#stop the player
 		$AnimationPlayer.stop()
-		#Movimenta o personagem
+		#Move the player
 	move_and_slide(vectorMovement*50)
 	
 

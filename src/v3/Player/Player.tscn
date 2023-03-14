@@ -82,7 +82,7 @@ tracks/0/keys = {
 
 [sub_resource type="CapsuleShape2D" id=5]
 radius = 5.0
-height = 10.0
+height = 8.0
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -97,10 +97,11 @@ anims/esquerda = SubResource( 6 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 159, 154 )
 current = true
-limit_left = -1
-limit_top = -56
-limit_right = 769
-limit_bottom = 409
+zoom = Vector2( 0.3, 0.3 )
+limit_left = 0
+limit_top = -48
+limit_right = 640
+limit_bottom = 320
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 editor_draw_limits = true
@@ -109,10 +110,9 @@ editor_draw_drag_margin = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 159, 154 )
 shape = SubResource( 5 )
-disabled = true
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 159, 151 )
+position = Vector2( 159, 150 )
 scale = Vector2( 0.130208, 0.130208 )
 texture = ExtResource( 2 )
 hframes = 28

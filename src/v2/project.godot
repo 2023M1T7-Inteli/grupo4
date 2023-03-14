@@ -16,7 +16,6 @@ run/main_scene="res://tela inicial completa/starSreen.tscn"
 [autoload]
 
 Global="*res://Puzzle/Global.gd"
-Controls="*res://Interface/Interface.gd"
 
 [display]
 
@@ -52,18 +51,6 @@ texture={
 "stream": false,
 "svg/scale": 1.0
 }
-
-[input]
-
-accept={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777221,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
-
-[input_devices]
-
-pointing/emulate_touch_from_mouse=true
 
 [physics]
 

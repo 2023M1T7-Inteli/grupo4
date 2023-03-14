@@ -24,5 +24,3 @@ margin_left = 150.0
 margin_right = 170.0
 margin_bottom = 20.0
 text = "X"
-
-[connection signal="pressed" from="delete" to="." method="_on_delete_pressed"]

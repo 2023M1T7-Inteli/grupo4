@@ -1,26 +1,15 @@
 extends Node
 
 var current_scene = null
-var tasks = ['', '', '', '', '', '', '', '']
-
-signal playing
+var tasks = ['walk']
 
 func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 	
-func addTask(index, task):
+func addTask(task):
 	print(task)
-	tasks[index] = task
-	
-func start():
-	emit_signal('playing')
-	
-func resetList():
-	tasks = ['', '', '', '', '', '', '', '']
-	
-func removeTask(id):
-	tasks.remove(id)
+	tasks.append(task)
 
 func goto_scene(path):
 	# This function will usually be called from a signal callback,

@@ -1,6 +1,5 @@
 extends Control
 
-
 func _ready():
 	$returnBtn.grab_focus()
 

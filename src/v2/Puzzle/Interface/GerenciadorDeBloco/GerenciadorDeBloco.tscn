@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Puzzle/Interface/GerenciadorDeBloco/GerenciadorDeBloco.gd" type="Script" id=1]
 
-[node name="GerenciadorDeBloco" type="VBoxContainer"]
+[node name="GerenciadorDeBloos" type="VBoxContainer"]
 margin_right = 136.0
 margin_bottom = 164.0
 script = ExtResource( 1 )
