@@ -658,7 +658,7 @@ position = Vector2( 317, 236 )
 [node name="bau4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 30, 236 )
 
-[node name="bau" parent="." instance=ExtResource( 3 )]
+[node name="bau1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 46, -3 )
 
 [node name="YSort" type="YSort" parent="."]
@@ -669,6 +669,14 @@ tile_set = SubResource( 10 )
 cell_size = Vector2( 1, 1 )
 format = 1
 tile_data = PoolIntArray( -65315, 1, 0, 6029439, 0, 0, 6488555, 3, 0, 8061297, 2, 0, 11534439, 3, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1, -1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CanvasLayer" parent="Player" instance=ExtResource( 16 )]
 
 [node name="casa" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
@@ -688,14 +696,6 @@ tile_set = SubResource( 4 )
 cell_size = Vector2( 4, 4 )
 format = 1
 tile_data = PoolIntArray( -917457, 5, 0, 655386, 4, 0, 983124, 6, 0, 983155, 7, 0 )
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -1, -1 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CanvasLayer" parent="Player" instance=ExtResource( 16 )]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
