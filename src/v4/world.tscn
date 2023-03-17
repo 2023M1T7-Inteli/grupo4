@@ -154,7 +154,7 @@ radius = 78.7271
 height = 209.728
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 186.197, 113.966 )
+extents = Vector2( 223.686, 28.4919 )
 
 [sub_resource type="TileSet" id=10]
 0/name = "portas.png 0"
@@ -649,6 +649,7 @@ extents = Vector2( 46.4118, 39.1379 )
 extents = Vector2( 262.499, 266.667 )
 
 [node name="world" type="Node2D"]
+pause_mode = 2
 script = ExtResource( 10 )
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -684,10 +685,10 @@ position = Vector2( -0.000488281, -104.909 )
 shape = SubResource( 12 )
 
 [node name="Npc1Colision" type="Area2D" parent="Npc1"]
-position = Vector2( -26.2427, 52.4546 )
+position = Vector2( -26.2432, 52.4546 )
 
 [node name="Npc1Colision" type="CollisionShape2D" parent="Npc1/Npc1Colision"]
-position = Vector2( 26.2422, 419.637 )
+position = Vector2( 12.498, 312.463 )
 shape = SubResource( 13 )
 
 [node name="portas" type="TileMap" parent="."]
@@ -1000,6 +1001,7 @@ position = Vector2( 433.331, -33.3335 )
 scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 8 )
 
+[connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]
 [connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]
 [connection signal="body_entered" from="placa/placaTutorial" to="." method="_on_placaTutorial_body_entered"]

@@ -3,12 +3,19 @@ extends Node2D
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
 
+var newDialog = Dialogic 
+
 func _ready() -> void:
 	#quando entra no jogo incia o Dialogo.
-	var newDialog = Dialogic.start('Inicio')
-	add_child(newDialog)
-
+	add_child(newDialog.start('Inicio'))
+		
 func _process(delta):
+	print(newDialog.has_current_dialog_node())
+	if newDialog.has_current_dialog_node() == true:
+		get_node("Player").moving = false
+	else:
+		get_node("Player").moving = true
+		
 	for i in range(1,5):
 		var minigame = get_node("bau"+str(i))
 		
@@ -25,7 +32,7 @@ func _process(delta):
 			self.pause_mode= Node.PAUSE_MODE_STOP
 		else:
 			self.pause_mode= Node.PAUSE_MODE_INHERIT
-			
+		
 func _on_placaTutorial_body_entered(body):
 # invoke a floating scene when entering the collision area
 	get_tree().current_scene.add_child(preloadMensagem)
@@ -38,5 +45,8 @@ func _on_PlacaFase1_body_entered(body):
 # change scene to mapa scene
 	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
 
-
+func _on_Npc1Colision_body_entered(body):
+	add_child(newDialog.start('Npc1'))
+	
+	
 	

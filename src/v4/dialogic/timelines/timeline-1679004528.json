@@ -1,9 +1,10 @@
 {
 	"events": [
 		{
-			"animation": "[Default]",
+			"animation": "2-fade_in_up.gd",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
+			"change_position": false,
 			"change_z_index": false,
 			"character": "character-1679004245.json",
 			"event_id": "dialogic_002",
@@ -12,7 +13,7 @@
 			"portrait_definition": "",
 			"position": {
 				"0": false,
-				"1": false,
+				"1": true,
 				"2": false,
 				"3": false,
 				"4": false
