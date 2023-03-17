@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1679004245.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1679004245.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então você e o novo alaventureiro que quer explora esse incrível mundo ?\n Bom já que é essa sua escolha, fiquei sabendo que possui muitas pessoas legais por aí e que vão te ajuda bastante nessa sua aventura.\nAlém disso, segredo nosso, sua primeira aventura começa na praia, mas não se esqueça que não será fácil!."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1679004528.json",
+		"name": "Npc1"
+	}
+}

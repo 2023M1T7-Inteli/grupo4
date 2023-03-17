@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -13,9 +13,10 @@
 [ext_resource path="res://imagens/pixil-placa F1.png" type="Texture" id=11]
 [ext_resource path="res://imagens/pixil-frame-0 (1).png" type="Texture" id=12]
 [ext_resource path="res://imagens/portas.png" type="Texture" id=13]
-[ext_resource path="res://portas 2.png" type="Texture" id=14]
-[ext_resource path="res://casas sem portas.png" type="Texture" id=15]
+[ext_resource path="res://imagens/portas 2.png" type="Texture" id=14]
+[ext_resource path="res://imagens/casas sem portas.png" type="Texture" id=15]
 [ext_resource path="res://Interface/Interface.tscn" type="PackedScene" id=16]
+[ext_resource path="res://imagens/npc 1.png" type="Texture" id=17]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_all.png 0"
@@ -147,6 +148,13 @@
 5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=12]
+radius = 78.7271
+height = 209.728
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 186.197, 113.966 )
 
 [sub_resource type="TileSet" id=10]
 0/name = "portas.png 0"
@@ -638,7 +646,7 @@ b = Vector2( 130, 271 )
 extents = Vector2( 46.4118, 39.1379 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 516.667, 466.668 )
+extents = Vector2( 262.499, 266.667 )
 
 [node name="world" type="Node2D"]
 script = ExtResource( 10 )
@@ -663,6 +671,24 @@ position = Vector2( 46, -3 )
 
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( -2, -2 )
+
+[node name="Npc1" type="Sprite" parent="."]
+position = Vector2( 186, 104 )
+scale = Vector2( 0.0381062, 0.0381282 )
+texture = ExtResource( 17 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Npc1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Npc1/StaticBody2D"]
+position = Vector2( -0.000488281, -104.909 )
+shape = SubResource( 12 )
+
+[node name="Npc1Colision" type="Area2D" parent="Npc1"]
+position = Vector2( -26.2427, 52.4546 )
+
+[node name="Npc1Colision" type="CollisionShape2D" parent="Npc1/Npc1Colision"]
+position = Vector2( 26.2422, 419.637 )
+shape = SubResource( 13 )
 
 [node name="portas" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
@@ -962,14 +988,15 @@ position = Vector2( -199.529, 49.6552 )
 shape = SubResource( 9 )
 
 [node name="placa" type="Sprite" parent="."]
-position = Vector2( 201, 112 )
+position = Vector2( 205, 116 )
 scale = Vector2( 0.03, 0.03 )
 texture = ExtResource( 9 )
 
 [node name="placaTutorial" type="Area2D" parent="placa"]
+position = Vector2( -466.667, 66.6665 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="placa/placaTutorial"]
-position = Vector2( -50, 233.333 )
+position = Vector2( 433.331, -33.3335 )
 scale = Vector2( 0.999999, 0.999999 )
 shape = SubResource( 8 )
 

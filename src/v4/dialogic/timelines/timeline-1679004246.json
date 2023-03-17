@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Seja bem-vindo a alaventura, é aqui onde esconde muitos segredos para serem descobertos.\nOs personagens iram guiar seu caminho para uma incrível aventura, basta conversar com eles."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1679004246.json",
+		"name": "Inicio"
+	}
+}
