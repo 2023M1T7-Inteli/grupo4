@@ -8,25 +8,28 @@ onready var task = ''
 # var b = "text"
 
 # Update button image
-func updateButton():
-	match task:
-		"left":
-			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow.png')
-			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow_pressed.png')
-		"right":
-			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/right/right_arrow.png')
-			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/right/right_arrow_pressed.png')
-		"up":
-			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow.png')
-			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow_pressed.png')
-		"down":
-			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow.png')
-			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow_pressed.png')
+func updateButton(newTask):
+	match newTask:
+		"walk":
+			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/walk/walk.png')
+			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/walk/walk.png')
+		"turn":
+			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/turn/turn.png')
+			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/turn/turn.png')
+		"turn_anti":
+			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/arrows/turn_anti/turn_anti.png')
+			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/arrows/turn_anti/turn_anti.png')
+		"empty":
+			self.texture_normal = load('res://Puzzle/Interface/Gerenciador/images/add.png')
+			self.texture_pressed = load('res://Puzzle/Interface/Gerenciador/images/add.png')
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	task = get_node("/root/Global").tasks[index]
-	updateButton()
+	task = get_node("/root/Global").tasks
+	if (len(task) > index):
+		task = task[index]
+		print(task)
+	updateButton(task)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -38,21 +41,18 @@ func _on_Add_pressed():
 	$AnimationPlayer.play()
 	print('b')
 
-func addTask(newTask):
-	task = newTask
-	get_node("/root/Global").addTask(index, newTask)
-	updateButton()
-	$AnimationPlayer.current_animation = 'slide_down'
-	$AnimationPlayer.play()
+#func addTask(newTask):
+#	task = newTask
+#	get_node("/root/Global").addTask(newTask)
+#	updateButton(newTask)
+#	$AnimationPlayer.current_animation = 'slide_down'
+#	$AnimationPlayer.play()
 
-func _on_ArrowLeft_pressed():
-	addTask('left')
-
-func _on_ArrowRight_pressed():
-	addTask('right')
-
-func _on_ArrowUp_pressed():
-	addTask('up')
-
-func _on_ArrowDown_pressed():
-	addTask('down')
+#func _on_TurnAnti_pressed():
+#	addTask('turn_anti')
+#
+#func _on_Turn_pressed():
+#	addTask('turn')
+#
+#func _on_Walk_pressed():
+#	addTask('walk')

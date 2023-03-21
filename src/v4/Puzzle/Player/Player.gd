@@ -13,10 +13,39 @@ onready var target = position
 # Saves if player is in motion
 onready var moving = false
 
+# Defines possible directions
+var directions = ['right', 'up', 'left', 'down']
+var currentDirection = 2
+
 func start():
 	playing = true
 	tasks = get_node("/root/Global").tasks
-	print('AAAAAAAAAAAAA')
+
+
+func updateSpriteDirection():
+	match(directions[currentDirection]):
+		'up':
+			$Sprite.play('idle_up')
+		'down':
+			$Sprite.play('idle')
+		'right':
+			$Sprite.play('idle_right')
+		'left':
+			$Sprite.play('idle_left')
+	
+func rotate(command):
+	if (command == 'turn'):
+		if (currentDirection == 0):
+			currentDirection = 3
+		else:
+			currentDirection -= 1
+	elif (command == 'turn_anti'):
+		if (currentDirection == 3):
+			currentDirection == 0
+		else:
+			currentDirection += 1
+			
+	updateSpriteDirection()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,20 +54,22 @@ func _ready():
 			
 func run(currentTask):
 	var x = tasks[currentTask]
-	
-	match(x):
-		"up":
-			target.y -= tilemap
-			$Sprite.play("up")
-		"down":
-			target.y += tilemap
-			$Sprite.play("down")
-		"left":
-			target.x -= tilemap
-			$Sprite.play("left")
-		"right":
-			target.x += tilemap
-			$Sprite.play("right")
+	if (x == 'turn' || x == 'turn_anti'):
+		rotate(x)
+	else:
+		match(directions[currentDirection]):
+			'up':
+				target.y -= tilemap
+				$Sprite.play("up")
+			"down":
+				target.y += tilemap
+				$Sprite.play("down")
+			"right":
+				target.x += tilemap
+				$Sprite.play("right")
+			"left":
+				target.x -= tilemap
+				$Sprite.play("left")
 			
 	# Set player velocity according to target and speed
 	velocity = position.direction_to(target) * speed
@@ -63,5 +94,5 @@ func _physics_process(delta):
 		# If the distance is less than 5
 	else:
 		# Save that player is NOT moving
-		$Sprite.play("idle")
+		updateSpriteDirection()
 		moving = false

@@ -31,7 +31,7 @@ func rotate(command):
 			currentDirection == 0
 		else:
 			currentDirection += 1
-			
+
 func run(currentTask):
 	var x = tasks[currentTask]
 	if (x == 'rotate' || x == 'rotate_counter'):

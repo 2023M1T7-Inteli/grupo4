@@ -1,7 +1,7 @@
 extends Node
 
 var current_scene = null
-var tasks = ['', '', '', '', '', '', '', '']
+var tasks = []
 
 signal playing
 
@@ -9,9 +9,10 @@ func _ready():
 	var root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 	
-func addTask(index, task):
+func addTask(task):
 	print(task)
-	tasks[index] = task
+	if (len(tasks) < 8):
+		tasks.append(task)
 	
 func start():
 	emit_signal('playing')
