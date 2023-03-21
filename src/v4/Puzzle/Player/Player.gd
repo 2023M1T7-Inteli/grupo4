@@ -15,7 +15,7 @@ onready var moving = false
 
 # Defines possible directions
 var directions = ['right', 'up', 'left', 'down']
-var currentDirection = 2
+var currentDirection = 0
 
 func start():
 	playing = true
@@ -41,7 +41,7 @@ func rotate(command):
 			currentDirection -= 1
 	elif (command == 'turn_anti'):
 		if (currentDirection == 3):
-			currentDirection == 0
+			currentDirection = 0
 		else:
 			currentDirection += 1
 			
