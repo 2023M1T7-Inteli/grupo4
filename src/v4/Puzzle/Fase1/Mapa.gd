@@ -2,10 +2,10 @@ extends Node2D
 
 var finishedRun = false
 var status = 'none'
+var newDialog = Dialogic 
 
 func _ready():
-	
-	pass
+	add_child(newDialog.start('Npc2'))
 #change scene to world scene when the texture button is pressed
 func _on_TextureButton_pressed():
 	get_tree().change_scene("res://world.tscn")
