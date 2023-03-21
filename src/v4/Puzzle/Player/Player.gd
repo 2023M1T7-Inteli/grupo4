@@ -1,7 +1,10 @@
 extends KinematicBody2D
 
 var playing = false
+var started = false
 var tasks = []
+
+signal finishedRun
 
 var velocity = Vector2()
 export (int) var speed = 72
@@ -18,9 +21,10 @@ var directions = ['right', 'up', 'left', 'down']
 var currentDirection = 0
 
 func start():
-	playing = true
-	tasks = get_node("/root/Global").tasks
-
+	if (!started):
+		started = true
+		playing = true
+		tasks = get_node("/root/Global").tasks
 
 func updateSpriteDirection():
 	match(directions[currentDirection]):
@@ -74,9 +78,12 @@ func run(currentTask):
 	velocity = position.direction_to(target) * speed
 		
 	print(tasks[currentTask])
-	if (currentTask + 1 < len(tasks)):
-		yield(get_tree().create_timer(1.5), "timeout")
+	yield(get_tree().create_timer(1.5), "timeout")
+	if (currentTask < len(tasks) - 1):
 		run(currentTask + 1)
+	else:
+		emit_signal("finishedRun")
+		playing = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):

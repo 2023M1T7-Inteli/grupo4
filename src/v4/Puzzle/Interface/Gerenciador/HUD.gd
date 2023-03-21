@@ -25,6 +25,8 @@ func _on_returnMap_pressed():
 	get_tree().change_scene("res://world.tscn")
 
 func _addTask(task):
+	if get_parent().get_node('Player').started:
+		return
 	# Verifica se o global já ta cheio
 	var g = get_node('/root/Global')
 	
