@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/hud2.png" type="Texture" id=1]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow.png" type="Texture" id=2]
@@ -15,6 +15,9 @@
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow_pressed.png" type="Texture" id=13]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/walk/walk.png" type="Texture" id=14]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/delete/delete.png" type="Texture" id=15]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/delete/delete_pressed.png" type="Texture" id=16]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/turn/turn_pressed.png" type="Texture" id=17]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/turn_anti/turn_anti_pressed.png" type="Texture" id=18]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 5 )
@@ -145,7 +148,7 @@ rect_pivot_offset = Vector2( 32, -59 )
 shortcut_in_tooltip = false
 action_mode = 0
 texture_normal = ExtResource( 15 )
-texture_pressed = ExtResource( 15 )
+texture_pressed = ExtResource( 16 )
 
 [node name="Walk" type="TextureButton" parent="TextureRect/VBoxContainer"]
 show_behind_parent = true
@@ -167,7 +170,7 @@ rect_pivot_offset = Vector2( 32, -59 )
 shortcut_in_tooltip = false
 action_mode = 0
 texture_normal = ExtResource( 12 )
-texture_pressed = ExtResource( 12 )
+texture_pressed = ExtResource( 18 )
 
 [node name="Turn" type="TextureButton" parent="TextureRect/VBoxContainer"]
 show_behind_parent = true
@@ -178,7 +181,7 @@ rect_pivot_offset = Vector2( 32, -59 )
 shortcut_in_tooltip = false
 action_mode = 0
 texture_normal = ExtResource( 11 )
-texture_pressed = ExtResource( 11 )
+texture_pressed = ExtResource( 17 )
 
 [node name="ArrowLeft" type="TextureButton" parent="TextureRect/VBoxContainer"]
 visible = false
