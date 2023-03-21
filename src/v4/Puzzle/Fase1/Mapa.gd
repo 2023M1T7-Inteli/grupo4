@@ -15,5 +15,6 @@ func _on_Area2D_body_entered(body):
 #change scene to winner scene when the Area2D body enter the respective colision
 func _on_vitoria_body_entered(body):
 	var winnerScene = load("res://winner & loser bgd/winner scene.tscn").instance()
+	get_tree().current_scene.remove_child($Player)
 	get_tree().current_scene.add_child(winnerScene)
 	get_node("HUD").resetList()  # change the scene to the winner scene

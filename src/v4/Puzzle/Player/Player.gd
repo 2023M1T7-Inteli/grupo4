@@ -51,7 +51,6 @@ func rotate(command):
 func _ready():
 	get_node("/root/Global").connect("playing", self, "start")
 	
-			
 func run(currentTask):
 	var x = tasks[currentTask]
 	if (x == 'turn' || x == 'turn_anti'):
