@@ -43,8 +43,10 @@ func _process(delta) -> void:
 	#	if x == true:
 	#		switchChest()
 			
-func contaMat(x,s,y):
+func contaMat(x,s,y,a):
 	$CanvasLayer/ContaSoma/Label2.text = "Quanto é " + str(x) + s + str(y)
+	$CanvasLayer/ContaSoma/controls/Resposta1.text = str(x)
+	$CanvasLayer/ContaSoma/controls2/Resposta2.text = str(a)
 	if s == "+":
 		resultado = x + y
 	elif s == "-":

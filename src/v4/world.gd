@@ -20,13 +20,13 @@ func _process(delta):
 		var minigame = get_node("bau"+str(i))
 		
 		if minigame == get_node("bau1"):
-			minigame.contaMat(1,"+",2)
+			minigame.contaMat(1,"+",2,4)
 		elif minigame == get_node("bau2"):
-			minigame.contaMat(3,"-",2)
+			minigame.contaMat(3,"-",2, 3)
 		elif minigame == get_node("bau3"):
-			minigame.contaMat(4,"x",3)
+			minigame.contaMat(4,"x",3, 10)
 		elif minigame == get_node("bau4"):
-			minigame.contaMat(4,"/",2)
+			minigame.contaMat(4,"/",2, 8)
 		
 		if minigame.x == true:
 			self.pause_mode= Node.PAUSE_MODE_STOP
