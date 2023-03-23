@@ -8,7 +8,7 @@
 [ext_resource path="res://imagens/free.png" type="Texture" id=6]
 [ext_resource path="res://imagens/free version.png" type="Texture" id=7]
 [ext_resource path="res://imagens/pixil-frame-0 (10).png" type="Texture" id=8]
-[ext_resource path="res://pixil-frame-0 (62).png" type="Texture" id=9]
+[ext_resource path="res://imagens/pixil-frame-0 (62).png" type="Texture" id=9]
 [ext_resource path="res://world.gd" type="Script" id=10]
 [ext_resource path="res://imagens/pixil-placa F1.png" type="Texture" id=11]
 [ext_resource path="res://imagens/pixil-frame-0 (1).png" type="Texture" id=12]
