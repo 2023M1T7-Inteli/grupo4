@@ -6,7 +6,7 @@ func _ready():
 
 func _on_startBtn_pressed():
 # change scene to the main map
-	get_tree().change_scene("res://world.tscn")
+	get_tree().change_scene("res://HUB.tscn")
 
 func _on_controlsBtn_pressed():
 # change scene to the settings scene

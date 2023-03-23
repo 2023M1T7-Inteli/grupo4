@@ -695,7 +695,6 @@ shape = SubResource( 14 )
 
 [node name="Npc3Colision3" type="CollisionShape2D" parent="Npc3/Area2D"]
 position = Vector2( -2.5, 2823.07 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 15 )
 
 [node name="Npc1" type="Sprite" parent="."]
@@ -1018,6 +1017,12 @@ shape = SubResource( 9 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="casinha1"]
 position = Vector2( 135, 100 )
 shape = SubResource( 16 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 136, 125 )
+
+[node name="Position2D2" type="Position2D" parent="."]
+position = Vector2( 184, 151 )
 
 [connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]

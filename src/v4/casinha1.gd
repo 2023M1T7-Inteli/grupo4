@@ -1,6 +1,7 @@
 extends Node2D
 
+var i = false
 
 
 func _on_saidaCasinha1_body_entered(body):
-	get_tree().change_scene("res://world.tscn")
+	i = true
