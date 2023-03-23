@@ -10,4 +10,4 @@ func _on_btnRestart_pressed():
 
 # change scene to word scene
 func _on_btnMap_pressed():
-	get_tree().change_scene("res://world.tscn")
+	get_tree().change_scene("res://HUB.tscn")

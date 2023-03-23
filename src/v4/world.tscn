@@ -681,7 +681,7 @@ position = Vector2( 46, -3 )
 position = Vector2( -2, -2 )
 
 [node name="Npc3" type="Sprite" parent="."]
-position = Vector2( 164, 210 )
+position = Vector2( 329, 190 )
 scale = Vector2( 0.00222053, 0.00221194 )
 texture = ExtResource( 9 )
 
@@ -698,7 +698,7 @@ position = Vector2( -2.5, 2823.07 )
 shape = SubResource( 15 )
 
 [node name="Npc1" type="Sprite" parent="."]
-position = Vector2( 199, 104 )
+position = Vector2( 277, 77 )
 scale = Vector2( 0.0381062, 0.0381282 )
 texture = ExtResource( 17 )
 
@@ -1018,14 +1018,10 @@ shape = SubResource( 9 )
 position = Vector2( 135, 100 )
 shape = SubResource( 16 )
 
-[node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 136, 125 )
-
-[node name="Position2D2" type="Position2D" parent="."]
-position = Vector2( 184, 151 )
-
 [connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]
+[connection signal="body_exited" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_exited"]
 [connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]
 [connection signal="body_entered" from="casinha1" to="." method="_on_casinha1_body_entered"]
+[connection signal="body_exited" from="casinha1" to="." method="_on_casinha1_body_exited"]

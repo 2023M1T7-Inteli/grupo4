@@ -8,7 +8,7 @@ func _ready():
 	add_child(newDialog.start('Npc2'))
 #change scene to world scene when the texture button is pressed
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://world.tscn")
+	get_tree().change_scene("res://HUB.tscn")
 
 #change scene to loser scene when the Area2D body enter the respective colision
 func _on_Area2D_body_entered(body):
