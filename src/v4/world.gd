@@ -2,6 +2,7 @@ extends Node2D
 
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
+var preloadCasinha1 = preload("res://casinha1.tscn").instance()
 
 var newDialog = Dialogic 
 
@@ -50,3 +51,7 @@ func _on_Npc1Colision_body_entered(body):
 	
 func _on_Area2D_body_entered(body):
 	add_child(newDialog.start('Npc3'))
+
+
+func _on_casinha1_body_entered(body):
+	get_tree().current_scene.add_child(preloadCasinha1)
