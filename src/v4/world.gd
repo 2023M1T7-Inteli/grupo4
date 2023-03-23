@@ -48,5 +48,5 @@ func _on_PlacaFase1_body_entered(body):
 func _on_Npc1Colision_body_entered(body):
 	add_child(newDialog.start('Npc1'))
 	
-	
-	
+func _on_Area2D_body_entered(body):
+	add_child(newDialog.start('Npc3'))

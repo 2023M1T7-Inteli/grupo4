@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://imagens/free.png" type="Texture" id=6]
 [ext_resource path="res://imagens/free version.png" type="Texture" id=7]
 [ext_resource path="res://imagens/pixil-frame-0 (10).png" type="Texture" id=8]
+[ext_resource path="res://pixil-frame-0 (62).png" type="Texture" id=9]
 [ext_resource path="res://world.gd" type="Script" id=10]
 [ext_resource path="res://imagens/pixil-placa F1.png" type="Texture" id=11]
 [ext_resource path="res://imagens/pixil-frame-0 (1).png" type="Texture" id=12]
@@ -147,6 +148,13 @@
 5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=14]
+radius = 1801.38
+height = 2726.48
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 1803.88, 341.575 )
 
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 78.7271
@@ -669,6 +677,24 @@ position = Vector2( 46, -3 )
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( -2, -2 )
 
+[node name="Npc3" type="Sprite" parent="."]
+position = Vector2( 164, 210 )
+scale = Vector2( 0.00222053, 0.00221194 )
+texture = ExtResource( 9 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Npc3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Npc3/StaticBody2D"]
+position = Vector2( 0.0078125, -1356.31 )
+shape = SubResource( 14 )
+
+[node name="Area2D" type="Area2D" parent="Npc3"]
+
+[node name="Npc3Colision3" type="CollisionShape2D" parent="Npc3/Area2D"]
+position = Vector2( -2.5, 2823.07 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 15 )
+
 [node name="Npc1" type="Sprite" parent="."]
 position = Vector2( 199, 104 )
 scale = Vector2( 0.0381062, 0.0381282 )
@@ -984,6 +1010,7 @@ texture = ExtResource( 11 )
 position = Vector2( -199.529, 49.6552 )
 shape = SubResource( 9 )
 
+[connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]
 [connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]

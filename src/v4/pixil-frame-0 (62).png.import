@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DALL_E_2023-03-21_10.34.41_-_manatee_cute_pixel_art_for_a_game-removebg-preview.png-921537bdb70129e5c92908cad587a347.stex"
+path="res://.import/pixil-frame-0 (62).png-cf61c5522a0020bf10d04f5337c73a00.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DALL_E_2023-03-21_10.34.41_-_manatee_cute_pixel_art_for_a_game-removebg-preview.png"
-dest_files=[ "res://.import/DALL_E_2023-03-21_10.34.41_-_manatee_cute_pixel_art_for_a_game-removebg-preview.png-921537bdb70129e5c92908cad587a347.stex" ]
+source_file="res://pixil-frame-0 (62).png"
+dest_files=[ "res://.import/pixil-frame-0 (62).png-cf61c5522a0020bf10d04f5337c73a00.stex" ]
 
 [params]
 
