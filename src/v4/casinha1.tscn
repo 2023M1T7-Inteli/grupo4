@@ -453,7 +453,7 @@ a = Vector2( 324, 74 )
 b = Vector2( 181, 74 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 3, 2.5 )
+extents = Vector2( 6.5, 0.75 )
 
 [node name="casinha1" type="Node2D"]
 script = ExtResource( 4 )
@@ -511,7 +511,7 @@ polygon = PoolVector2Array( 148, 237, 153, 237, 155, 236, 156, 234, 164, 233, 17
 [node name="saidaCasinha1" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="saidaCasinha1"]
-position = Vector2( 160, 65 )
+position = Vector2( 159.5, 61.25 )
 shape = SubResource( 10 )
 
 [connection signal="body_entered" from="saidaCasinha1" to="." method="_on_saidaCasinha1_body_entered"]
