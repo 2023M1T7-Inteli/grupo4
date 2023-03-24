@@ -103,10 +103,10 @@ custom_styles/disabled = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 639.0
-margin_top = 422.0
-margin_right = 702.0
-margin_bottom = 483.0
+margin_left = 622.0
+margin_top = 443.0
+margin_right = 685.0
+margin_bottom = 504.0
 
 [node name="Label2" type="Label" parent="."]
 anchor_left = 0.5
@@ -126,7 +126,7 @@ align = 1
 valign = 1
 
 [node name="PixelCasinha" type="Sprite" parent="."]
-position = Vector2( 659, 468 )
+position = Vector2( 650, 474 )
 scale = Vector2( 0.182099, 0.182099 )
 texture = ExtResource( 4 )
 
@@ -148,3 +148,4 @@ valign = 1
 
 [connection signal="pressed" from="controls/Resposta1" to="." method="_on_Resposta1_pressed"]
 [connection signal="pressed" from="controls2/Resposta2" to="." method="_on_Resposta2_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

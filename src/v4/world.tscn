@@ -752,7 +752,7 @@ tile_data = PoolIntArray( -917457, 5, 0, 655386, 4, 0, 983124, 6, 0, 983155, 7, 
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 1, 0 )
-polygon = PoolVector2Array( 113, 115, 127.326, 115, 127, 91, 134, 90, 142, 91, 142, 115, 158, 115, 162, 100, 166, 100, 165, 74, 158, 66, 114, 65, 106, 73, 105, 100, 109, 99 )
+polygon = PoolVector2Array( 113, 115, 126, 115, 126, 92, 134, 92, 142, 92, 142, 115, 158, 115, 162, 100, 166, 100, 165, 74, 158, 66, 114, 65, 106, 73, 105, 100, 109, 99 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 73, 153, 150, 153, 151, 152, 151, 154, 151, 159, 149, 160, 150, 171, 149, 171, 149, 177, 147, 180, 146, 189, 146, 193, 146, 195, 120, 194, 120, 177, 103, 177, 103, 196, 79, 196, 79, 194, 77, 180, 75, 177, 74, 171, 74, 160, 73, 153, 73, 154 )
@@ -1015,7 +1015,7 @@ shape = SubResource( 9 )
 [node name="casinha1" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="casinha1"]
-position = Vector2( 135.5, 102.5 )
+position = Vector2( 135, 104 )
 z_index = 1
 shape = SubResource( 16 )
 

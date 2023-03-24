@@ -10,3 +10,7 @@ func _on_Resposta1_pressed():
 func _on_Resposta2_pressed():
 	$feedback.text = String("Você errou. Tente novamente.")
 	resp = 0
+
+
+func _on_TextureButton_pressed():
+	get_tree().change_scene("res://HUB.tscn")
