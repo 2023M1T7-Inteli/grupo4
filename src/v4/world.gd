@@ -2,7 +2,6 @@ extends Node2D
 
 var casx = false
 var cas1 = false
-var ncp1x = false
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
 
@@ -58,7 +57,6 @@ func _on_PlacaFase1_body_entered(body):
 	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
 
 func _on_Npc1Colision_body_entered(body):
-	ncp1x = true
 	add_child(newDialog.start('Npc1'))
 	
 func _on_Area2D_body_entered(body):

@@ -681,7 +681,7 @@ position = Vector2( 46, -3 )
 position = Vector2( -2, -2 )
 
 [node name="Npc3" type="Sprite" parent="."]
-position = Vector2( 329, 190 )
+position = Vector2( 288, 181 )
 scale = Vector2( 0.00222053, 0.00221194 )
 texture = ExtResource( 9 )
 
@@ -722,7 +722,7 @@ format = 1
 tile_data = PoolIntArray( -65315, 1, 0, 6029439, 0, 0, 6488555, 3, 0, 8061297, 2, 0, 11534439, 3, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 25, -5 )
+position = Vector2( 38, -38 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1013,6 +1013,7 @@ position = Vector2( -199.529, 49.6552 )
 shape = SubResource( 9 )
 
 [node name="casinha1" type="Area2D" parent="."]
+pause_mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="casinha1"]
 position = Vector2( 135, 104 )
