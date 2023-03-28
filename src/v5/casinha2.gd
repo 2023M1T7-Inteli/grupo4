@@ -3,10 +3,10 @@ extends Node2D
 var x = false
 var i = false
 
-func _on_Area2D_body_entered(body):
+func _on_saida2_body_entered(body):
 	x = true
 
-func _on_Area2D_body_exited(body):
+func _on_saida2_body_exited(body):
 	x = false
 
 func _process(delta):

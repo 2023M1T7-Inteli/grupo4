@@ -13,13 +13,14 @@ script = ExtResource( 3 )
 [node name="casinha1" parent="." instance=ExtResource( 1 )]
 pause_mode = 1
 physics_interpolation_mode = 1
-position = Vector2( 670, 14 )
+position = Vector2( 661, 108 )
 
 [node name="casinha2" parent="." instance=ExtResource( 4 )]
+pause_mode = 1
 position = Vector2( 5, -353 )
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 16, -288 )
+position = Vector2( 696, 119 )
 
 [node name="Position2D2" type="Position2D" parent="."]
-position = Vector2( 314, -108 )
+position = Vector2( 979, 307 )

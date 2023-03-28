@@ -653,7 +653,7 @@ b = Vector2( 130, 271 )
 extents = Vector2( 46.4118, 39.1379 )
 
 [sub_resource type="RectangleShape2D" id=16]
-extents = Vector2( 5.5, 10.5 )
+extents = Vector2( 7, 10.75 )
 
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 7.5, 8.25 )
@@ -725,7 +725,7 @@ format = 1
 tile_data = PoolIntArray( -65315, 1, 0, 6029439, 0, 0, 6488555, 3, 0, 8061297, 2, 0, 11534439, 3, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 38, -38 )
+position = Vector2( -23, -29 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1019,7 +1019,7 @@ shape = SubResource( 9 )
 pause_mode = 2
 
 [node name="casinha2Collision" type="CollisionShape2D" parent="casinha1"]
-position = Vector2( 135, 104 )
+position = Vector2( 135, 104.25 )
 z_index = 1
 shape = SubResource( 16 )
 

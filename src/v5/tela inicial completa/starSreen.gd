@@ -18,7 +18,7 @@ func _unhandled_input(event):
 	
 func changeScene():
 	get_tree().change_scene("res://HUB.tscn")
-	print("oi")
+	
 	
 func _on_startBtn_pressed():
 	start = true

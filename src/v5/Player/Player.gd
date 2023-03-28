@@ -4,7 +4,6 @@ onready var interface = get_node("/root/Interface")
 var moving = true
 
 func _ready():
-	print(interface)
 	if (interface.has_signal('touch_left')):
 		print('has')
 		interface.connect("touch_left", self, "pressed")
@@ -33,5 +32,4 @@ func _physics_process(delta):
 		move_and_slide(vectorMovement*50)
 
 func pressed(isIt):
-	print('uau', isIt)
-
+	pass

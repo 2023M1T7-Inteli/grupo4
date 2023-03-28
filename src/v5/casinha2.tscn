@@ -317,7 +317,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 8, 16, 8 )
 0/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 8, 7 )
+extents = Vector2( 7.125, 8.9375 )
 
 [node name="casinha2" type="Node2D"]
 script = ExtResource( 5 )
@@ -355,11 +355,12 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983044, 0, 0, 983045, 0, 0, 983046, 0, 0, 983047, 0, 0, 983048, 0, 0, 983049, 0, 0, 983050, 0, 0, 983051, 0, 0, 983052, 0, 0, 983053, 0, 0, 983054, 0, 0, 983055, 0, 0, 983056, 0, 0, 983057, 0, 0, 983058, 0, 0 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="saida2" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 168, 233 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="saida2"]
+pause_mode = 2
+position = Vector2( 168, 230.063 )
 shape = SubResource( 15 )
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="saida2" to="." method="_on_saida2_body_entered"]
+[connection signal="body_exited" from="saida2" to="." method="_on_saida2_body_exited"]

@@ -1,6 +1,7 @@
 extends Node2D
 
-var casx = false
+var casx1 = false
+var casx2 = false
 var cas1 = false
 var cas2 = false
 #preload control scene
@@ -13,25 +14,26 @@ func _ready() -> void:
 	add_child(newDialog.start('Inicio'))
 		
 func _on_casinha1_body_entered(body):
-	casx = true
+	casx1 = true
 
 func _on_casinha1_body_exited(body):
-	casx = false
+	casx1 = false
 	
 func _on_casinha2_body_entered(body):
-	casx = true
+	casx2 = true
 	
 func _on_casinha2_body_exited(body):
-	cas2 = false
+	casx2 = false
 	
 func _process(delta):
-	if casx ==true and Input.is_action_just_pressed("ui_accept"):
+	
+		
+	if casx2 == true and Input.is_action_just_pressed("ui_accept"):
 		cas2 = true
 		
-	if casx == true and Input.is_action_just_pressed("ui_accept"):
+	if casx1 == true and Input.is_action_just_pressed("ui_accept"):
 		cas1 = true
-		
-	print(newDialog.has_current_dialog_node())
+	
 	if newDialog.has_current_dialog_node() == true:
 		get_node("Player").moving = false
 	else:

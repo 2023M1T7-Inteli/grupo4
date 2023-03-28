@@ -1,13 +1,16 @@
 extends Node2D
 
+var nCasas = 3
+
 func _ready():
 	ScreenTransition.get_child(0).get_child(0).play("transition_in")
 	$casinha1/Player/Camera2D.current = false
+	$casinha2/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
-	$casinha1/Player/Camera2D.limit_left = 694
-	$casinha1/Player/Camera2D.limit_top = 30
-	$casinha1/Player/Camera2D.limit_right = 998
-	$casinha1/Player/Camera2D.limit_bottom = 206
+	$casinha1/Player/Camera2D.limit_left = 696
+	$casinha1/Player/Camera2D.limit_top = 119
+	$casinha1/Player/Camera2D.limit_right = 979
+	$casinha1/Player/Camera2D.limit_bottom = 307
 	$casinha2/Player/Camera2D.limit_left = 16
 	$casinha2/Player/Camera2D.limit_top = -288
 	$casinha2/Player/Camera2D.limit_right = 314
@@ -31,8 +34,8 @@ func _process(delta):
 		$casinha2/Player.position = Vector2(9,67)
 		$casinha2/Player/Camera2D.current = true
 		$world.cas2 = false
-	
-	for a in range(1,2):
+	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
+	for a in range(1,nCasas):
 		if get_node("casinha"+str(a)).i:
 				get_node("casinha"+str(a)+"/Player/Camera2D").current = false
 				$world.pause_mode = Node.PAUSE_MODE_INHERIT
