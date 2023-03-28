@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -655,6 +655,9 @@ extents = Vector2( 46.4118, 39.1379 )
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 5.5, 10.5 )
 
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 7.5, 8.25 )
+
 [node name="world" type="Node2D"]
 pause_mode = 2
 script = ExtResource( 10 )
@@ -1015,10 +1018,16 @@ shape = SubResource( 9 )
 [node name="casinha1" type="Area2D" parent="."]
 pause_mode = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="casinha1"]
+[node name="casinha2Collision" type="CollisionShape2D" parent="casinha1"]
 position = Vector2( 135, 104 )
 z_index = 1
 shape = SubResource( 16 )
+
+[node name="casinha2" type="Area2D" parent="."]
+
+[node name="casinha2Collision" type="CollisionShape2D" parent="casinha2"]
+position = Vector2( 111.5, 186.75 )
+shape = SubResource( 17 )
 
 [connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]
@@ -1027,3 +1036,5 @@ shape = SubResource( 16 )
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]
 [connection signal="body_entered" from="casinha1" to="." method="_on_casinha1_body_entered"]
 [connection signal="body_exited" from="casinha1" to="." method="_on_casinha1_body_exited"]
+[connection signal="body_entered" from="casinha2" to="." method="_on_casinha2_body_entered"]
+[connection signal="body_exited" from="casinha2" to="." method="_on_casinha2_body_exited"]

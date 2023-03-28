@@ -1,7 +1,5 @@
 extends Node2D
 
-var v = true
-
 func _ready():
 	$casinha1/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
@@ -9,6 +7,10 @@ func _ready():
 	$casinha1/Player/Camera2D.limit_top = 30
 	$casinha1/Player/Camera2D.limit_right = 998
 	$casinha1/Player/Camera2D.limit_bottom = 206
+	$casinha2/Player/Camera2D.limit_left = 16
+	$casinha2/Player/Camera2D.limit_top = -288
+	$casinha2/Player/Camera2D.limit_right = 314
+	$casinha2/Player/Camera2D.limit_bottom = -108
 	
 func _process(delta):
 	if $world.cas1:
@@ -20,6 +22,14 @@ func _process(delta):
 		$casinha1/Player/Camera2D.current = true
 		$world.cas1 = false
 		
+	if $world.cas2:
+		$world/Player/Camera2D.current = false
+		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$casinha2.pause_mode = Node.PAUSE_MODE_INHERIT
+		$casinha2/Player.pause_mode = Node.PAUSE_MODE_INHERIT
+		$casinha2/Player.position = Vector2(9,67)
+		$casinha2/Player/Camera2D.current = true
+		$world.cas2 = false
 	
 	for a in range(1,2):
 		if get_node("casinha"+str(a)).i:
