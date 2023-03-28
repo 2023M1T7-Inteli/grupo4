@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	ScreenTransition.get_child(0).get_child(0).play("transition_in")
 	$casinha1/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
 	$casinha1/Player/Camera2D.limit_left = 694

@@ -2,7 +2,7 @@ extends Node2D
 
 var finishedRun = false
 var status = 'none'
-var newDialog = Dialogic 
+var newDialog = Dialogic
 
 func _ready():
 	add_child(newDialog.start('Npc2'))
@@ -12,6 +12,7 @@ func _on_TextureButton_pressed():
 
 #change scene to loser scene when the Area2D body enter the respective colision
 func _on_Area2D_body_entered(body):
+	
 	status = 'lost'
 	var winnerScene = load("res://winner & loser bgd/LoserScene.tscn").instance()
 	get_tree().current_scene.add_child(winnerScene)
