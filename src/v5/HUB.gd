@@ -18,6 +18,7 @@ func _ready():
 	
 func _process(delta):
 	if $world.cas1:
+		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
 		$casinha1.pause_mode = Node.PAUSE_MODE_INHERIT
@@ -27,6 +28,7 @@ func _process(delta):
 		$world.cas1 = false
 		
 	if $world.cas2:
+		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
 		$casinha2.pause_mode = Node.PAUSE_MODE_INHERIT
@@ -37,6 +39,7 @@ func _process(delta):
 	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
 	for a in range(1,nCasas):
 		if get_node("casinha"+str(a)).i:
+				ScreenTransition.get_child(0).get_child(0).play("transition_in")
 				get_node("casinha"+str(a)+"/Player/Camera2D").current = false
 				$world.pause_mode = Node.PAUSE_MODE_INHERIT
 				get_node("casinha"+str(a)).pause_mode = Node.PAUSE_MODE_STOP
