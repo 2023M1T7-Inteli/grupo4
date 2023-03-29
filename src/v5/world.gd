@@ -4,6 +4,7 @@ var casx1 = false
 var casx2 = false
 var cas1 = false
 var cas2 = false
+var start = false
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
 
@@ -66,7 +67,11 @@ func _on_placaTutorial_body_exited(body):
 	
 func _on_PlacaFase1_body_entered(body):
 # change scene to mapa scene
+	start == true
+	ScreenTransition.get_child(0).get_child(0).play("transition_out")
+	yield(get_tree().create_timer(1), "timeout")
 	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
+	start == false
 
 func _on_Npc1Colision_body_entered(body):
 	add_child(newDialog.start('Npc1'))

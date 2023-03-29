@@ -7,6 +7,7 @@ var newDialog = Dialogic
 func _ready():
 	add_child(newDialog.start('Npc2'))
 #change scene to world scene when the texture button is pressed
+	ScreenTransition.get_child(0).get_child(0).play("transition_in")
 func _on_TextureButton_pressed():
 	get_tree().change_scene("res://HUB.tscn")
 

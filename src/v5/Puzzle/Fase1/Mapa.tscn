@@ -403,11 +403,10 @@ z_index = -1
 texture = ExtResource( 7 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-visible = false
-margin_left = 784.0
-margin_top = 512.0
-margin_right = 864.0
-margin_bottom = 600.0
+margin_left = 847.0
+margin_top = 507.0
+margin_right = 927.0
+margin_bottom = 595.0
 
 [node name="Area2D" type="Area2D" parent="."]
 
