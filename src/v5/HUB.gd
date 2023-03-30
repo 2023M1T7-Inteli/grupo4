@@ -89,6 +89,15 @@ func _process(delta):
 				get_node("casinha"+str(a)+"/Player/Camera2D").current = false
 				$world.pause_mode = Node.PAUSE_MODE_INHERIT
 				get_node("casinha"+str(a)).pause_mode = Node.PAUSE_MODE_STOP
-				$world/Player.position = Vector2(-23,-31)
+				if a == 1:
+					$world/Player.position = Vector2(-23,-31)
+				if a == 2:
+					$world/Player.position = Vector2(-46,48)
+				if a == 3:
+					$world/Player.position = Vector2(219,-5)
+				if a == 4:
+					$world/Player.position = Vector2(71,-128)
+				if a == 5:
+					$world/Player.position = Vector2(342,-25)
 				$world/Player/Camera2D.current = true
 				get_node("casinha"+str(a)).i = false
