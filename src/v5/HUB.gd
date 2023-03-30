@@ -1,12 +1,14 @@
 extends Node2D
 
-var nCasas = 5
+var nCasas = 6
 
 func _ready():
 	ScreenTransition.get_child(0).get_child(0).play("transition_in")
 	$casinha1/Player/Camera2D.current = false
 	$casinha2/Player/Camera2D.current = false
 	$casinha3/Player/Camera2D.current = false
+	$casinha4/Player/Camera2D.current = false
+	$casinha5/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
 	$casinha1/Player/Camera2D.limit_left = 696
 	$casinha1/Player/Camera2D.limit_top = 119
@@ -24,6 +26,10 @@ func _ready():
 	$casinha4/Player/Camera2D.limit_top = -288
 	$casinha4/Player/Camera2D.limit_right = 642
 	$casinha4/Player/Camera2D.limit_bottom = -108
+	$casinha5/Player/Camera2D.limit_left = 356
+	$casinha5/Player/Camera2D.limit_top = 364
+	$casinha5/Player/Camera2D.limit_right = 654
+	$casinha5/Player/Camera2D.limit_bottom = 544
 	
 func _process(delta):
 	if $world.cas1:
@@ -65,6 +71,16 @@ func _process(delta):
 		$casinha4/Player.position = Vector2(1,61)
 		$casinha4/Player/Camera2D.current = true
 		$world.cas4 = false
+		
+	if $world.cas5:
+		ScreenTransition.get_child(0).get_child(0).play("transition_in")
+		$world/Player/Camera2D.current = false
+		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$casinha5.pause_mode = Node.PAUSE_MODE_INHERIT
+		$casinha5/Player.pause_mode = Node.PAUSE_MODE_INHERIT
+		$casinha5/Player.position = Vector2(1,60)
+		$casinha5/Player/Camera2D.current = true
+		$world.cas5 = false
 		
 	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
 	for a in range(1,nCasas):
