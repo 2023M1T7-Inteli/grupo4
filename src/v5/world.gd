@@ -1,9 +1,13 @@
 extends Node2D
 
+
+
 var casx1 = false
 var casx2 = false
+var casx3 = false
 var cas1 = false
 var cas2 = false
+var cas3 = false
 var start = false
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
@@ -26,8 +30,15 @@ func _on_casinha2_body_entered(body):
 func _on_casinha2_body_exited(body):
 	casx2 = false
 	
-func _process(delta):
+func _on_casinha3_body_entered(body):
+	casx3 = true
+
+func _on_casinha3_body_exited(body):
+	casx3 = false
 	
+func _process(delta):
+	if casx3 == true and Input.is_action_just_pressed("ui_accept"):
+		cas3 = true
 		
 	if casx2 == true and Input.is_action_just_pressed("ui_accept"):
 		cas2 = true
@@ -78,10 +89,3 @@ func _on_Npc1Colision_body_entered(body):
 	
 func _on_Area2D_body_entered(body):
 	add_child(newDialog.start('Npc3'))
-	
-
-
-
-	
-
-

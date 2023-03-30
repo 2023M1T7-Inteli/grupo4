@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://imagens/tiles_all.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -658,6 +658,9 @@ extents = Vector2( 7, 5.625 )
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 7.5, 4.75 )
 
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 6.25, 5.78125 )
+
 [node name="world" type="Node2D"]
 pause_mode = 2
 script = ExtResource( 10 )
@@ -725,7 +728,7 @@ format = 1
 tile_data = PoolIntArray( -65315, 1, 0, 6029439, 0, 0, 6488555, 3, 0, 8061297, 2, 0, 11534439, 3, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 41, -36 )
+position = Vector2( 41, -37 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1029,6 +1032,12 @@ shape = SubResource( 16 )
 position = Vector2( 112, 184 )
 shape = SubResource( 17 )
 
+[node name="casinha3" type="Area2D" parent="."]
+
+[node name="casinha3Collision" type="CollisionShape2D" parent="casinha3"]
+position = Vector2( 377, 131.219 )
+shape = SubResource( 18 )
+
 [connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_entered"]
 [connection signal="body_exited" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_exited"]
@@ -1038,3 +1047,5 @@ shape = SubResource( 17 )
 [connection signal="body_exited" from="casinha1" to="." method="_on_casinha1_body_exited"]
 [connection signal="body_entered" from="casinha2" to="." method="_on_casinha2_body_entered"]
 [connection signal="body_exited" from="casinha2" to="." method="_on_casinha2_body_exited"]
+[connection signal="body_entered" from="casinha3" to="." method="_on_casinha3_body_entered"]
+[connection signal="body_exited" from="casinha3" to="." method="_on_casinha3_body_exited"]
