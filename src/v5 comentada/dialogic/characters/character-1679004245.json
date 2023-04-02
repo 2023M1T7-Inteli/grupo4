@@ -1,0 +1,21 @@
+{
+	"color": "#ff85c512",
+	"description": "",
+	"display_name": "José",
+	"display_name_bool": true,
+	"id": "character-1679004245.json",
+	"mirror_portraits": false,
+	"name": "José",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -100,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://imagens/3af113a0-f9f0-4920-a2db-10678568be68-removebg-preview.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
