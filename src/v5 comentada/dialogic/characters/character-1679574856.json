@@ -1,0 +1,21 @@
+{
+	"color": "#ffff00f5",
+	"description": "",
+	"display_name": "Maria",
+	"display_name_bool": true,
+	"id": "character-1679574856.json",
+	"mirror_portraits": false,
+	"name": "Maria",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 115,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://imagens/Npc2.png"
+		}
+	],
+	"scale": 6,
+	"theme": ""
+}
