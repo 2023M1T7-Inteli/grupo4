@@ -18,14 +18,14 @@ func _on_TextureButton_pressed():
 #change scene to loser scene when the Area2D body enter the respective colision
 func _on_Area2D_body_entered(body):
 	status = 'lost'
-	var winnerScene = load("res://winner & loser bgd/LoserScene.tscn").instance()
+	var winnerScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
 	get_tree().current_scene.add_child(winnerScene)
 	get_node("HUD").resetList() #reset the comands list when the player lose the game or reset it
 	
 #change scene to winner scene when the Area2D body enter the respective colision
 func _on_vitoria_body_entered(body):
 	status = 'won'
-	var winnerScene = load("res://winner & loser bgd/winner scene.tscn").instance()
+	var winnerScene = load("res://Puzzle/Interface/Scenes/WinnerScene/winnerScene.tscn").instance()
 	winnerScene.next_phase = 2
 	winnerScene.current_phase = 1
 	
@@ -34,5 +34,5 @@ func _on_vitoria_body_entered(body):
 	
 func _on_Player_finishedRun():
 	if status == 'none':
-		var winnerScene = load("res://winner & loser bgd/LoserScene.tscn").instance()
+		var winnerScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
 		get_tree().current_scene.add_child(winnerScene)
