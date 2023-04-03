@@ -82,6 +82,7 @@ func _process(delta):
 		$casinha5/Player/Camera2D.current = true
 		$world.cas5 = false
 		
+		
 	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
 	for a in range(1,nCasas):
 		if get_node("casinha"+str(a)).i:

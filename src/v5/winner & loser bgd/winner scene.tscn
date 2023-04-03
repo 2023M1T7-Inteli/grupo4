@@ -153,7 +153,7 @@ custom_colors/font_color_pressed = Color( 0.988235, 0.521569, 0.0235294, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Reiniciar Fase 1"
 
-[node name="btnNextPhase" type="Button" parent="."]
+[node name="btnF2" type="Button" parent="."]
 margin_left = 147.0
 margin_top = 339.0
 margin_right = 385.0
@@ -167,17 +167,17 @@ custom_colors/font_color_pressed = Color( 0.988235, 0.521569, 0.0235294, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Ir para Fase 2"
 
+[node name="btnMap" type="TextureButton" parent="."]
+margin_left = 490.0
+margin_top = 410.0
+margin_right = 582.0
+margin_bottom = 494.0
+
 [node name="imgMap" type="Sprite" parent="."]
 position = Vector2( 536, 451 )
 scale = Vector2( 0.283951, 0.252142 )
 texture = ExtResource( 4 )
 
-[node name="btnMap" type="TextureButton" parent="imgMap"]
-margin_left = -162.0
-margin_top = -162.607
-margin_right = 162.0
-margin_bottom = 158.393
-
 [connection signal="pressed" from="btnRestart" to="." method="_on_btnRestart_pressed"]
-[connection signal="pressed" from="btnNextPhase" to="." method="_on_btnF2_pressed"]
-[connection signal="pressed" from="imgMap/btnMap" to="." method="_on_btnMap_pressed"]
+[connection signal="pressed" from="btnF2" to="." method="_on_btnF2_pressed"]
+[connection signal="pressed" from="btnMap" to="." method="_on_btnMap_pressed"]

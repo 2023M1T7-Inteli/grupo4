@@ -75,18 +75,18 @@ func _process(delta):
 		get_node("Player").moving = true
 		
 	for i in range(1,5):
-		var minigame = get_node("bau"+str(i))
+		var minigame = get_node("bau"+str(i)+"/CanvasLayer/ContaSoma")
 		
-		if minigame == get_node("bau1"):
+		if i==1:
 			minigame.contaMat(1,"+",2,4)
-		elif minigame == get_node("bau2"):
+		elif i==2:
 			minigame.contaMat(3,"-",2, 3)
-		elif minigame == get_node("bau3"):
+		elif i==3:
 			minigame.contaMat(4,"x",3, 10)
-		elif minigame == get_node("bau4"):
+		elif i==4:
 			minigame.contaMat(4,"/",2, 8)
 		
-		if minigame.x == true:
+		if get_node("bau"+str(i)+"/CanvasLayer").visible == true:
 			self.pause_mode= Node.PAUSE_MODE_STOP
 		else:
 			self.pause_mode= Node.PAUSE_MODE_INHERIT
