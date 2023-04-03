@@ -11,9 +11,10 @@
 [ext_resource path="res://Puzzle/Grid.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 91.3125, 29.3125 )
+extents = Vector2( 26.1563, 29.3125 )
 
 [node name="Mapa" type="Node2D"]
+position = Vector2( 1, 25 )
 script = ExtResource( 2 )
 
 [node name="AdicionarBloco" parent="." instance=ExtResource( 8 )]
@@ -109,7 +110,7 @@ polygon = PoolVector2Array( 248, 16, 153.226, 451.962, 128, 568, 376, 568, 360, 
 position = Vector2( 24, -344 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vitoria"]
-position = Vector2( 492.688, 488 )
+position = Vector2( 498, 798 )
 shape = SubResource( 2 )
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]

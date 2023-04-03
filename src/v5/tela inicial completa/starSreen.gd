@@ -14,7 +14,6 @@ func _unhandled_input(event):
 		ScreenTransition.get_child(0).get_child(0).play("transition_out")
 		yield(get_tree().create_timer(1),"timeout")
 		changeScene()
-		
 	
 func changeScene():
 	get_tree().change_scene("res://HUB.tscn")

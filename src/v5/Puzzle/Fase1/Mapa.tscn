@@ -87,7 +87,7 @@ tile_data = PoolIntArray( -1245031, 18, 0, -1244814, 18, 0, -917505, 19, 0, -655
 position = Vector2( -376, 24 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="vitoria"]
-position = Vector2( 600, 293 )
+position = Vector2( 960, 296 )
 shape = SubResource( 2 )
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
