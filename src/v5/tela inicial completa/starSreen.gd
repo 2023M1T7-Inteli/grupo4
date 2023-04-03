@@ -21,7 +21,10 @@ func changeScene():
 	
 	
 func _on_startBtn_pressed():
-	start = true
+		ScreenTransition.get_child(0).get_child(0).play("transition_out")
+		yield(get_tree().create_timer(1),"timeout")
+		changeScene()
+		start = true
 
 func _on_controlsBtn_pressed():
 # change scene to the settings scene
