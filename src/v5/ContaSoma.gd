@@ -1,20 +1,19 @@
 extends Control
 var resp
 var resposta1 = load("res://winner & loser bgd/winnerScene_bau.tscn").instance()
+var resposta2 = load("res://winner & loser bgd/loserScene_bau.tscn").instance()
 var resultado = 0
 func _ready():
 	pass # Replace with function body.
 
 func _on_Resposta1_pressed():
-	$feedback.text = String("Parabéns!Você acertou")
 	resp = 1
 	get_tree().current_scene.add_child(resposta1)
 
 	
 func _on_Resposta2_pressed():
-	$feedback.text = String("Você errou. Tente novamente.")
 	resp = 0
-
+	get_tree().current_scene.add_child(resposta2)
 
 func _on_TextureButton_pressed():
 	self.visible = false
