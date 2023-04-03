@@ -249,6 +249,15 @@ margin_top = 509.0
 margin_right = 910.52
 margin_bottom = 572.2
 
+[node name="PlaysLeft" type="RichTextLabel" parent="."]
+margin_left = 31.0
+margin_top = 45.0
+margin_right = 71.0
+margin_bottom = 59.0
+rect_scale = Vector2( 6, 6 )
+text = "3"
+scroll_active = false
+
 [connection signal="pressed" from="TextureRect/Arrow" to="." method="_on_Arrow_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Delete" to="." method="_on_Delete_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/Walk" to="." method="_on_Walk_pressed"]

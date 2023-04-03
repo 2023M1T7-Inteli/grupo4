@@ -153,7 +153,7 @@ custom_colors/font_color_pressed = Color( 0.988235, 0.521569, 0.0235294, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "Reiniciar Fase 1"
 
-[node name="btnF2" type="Button" parent="."]
+[node name="btnNextPhase" type="Button" parent="."]
 margin_left = 147.0
 margin_top = 339.0
 margin_right = 385.0
@@ -179,5 +179,5 @@ margin_right = 162.0
 margin_bottom = 158.393
 
 [connection signal="pressed" from="btnRestart" to="." method="_on_btnRestart_pressed"]
-[connection signal="pressed" from="btnF2" to="." method="_on_btnF2_pressed"]
+[connection signal="pressed" from="btnNextPhase" to="." method="_on_btnF2_pressed"]
 [connection signal="pressed" from="imgMap/btnMap" to="." method="_on_btnMap_pressed"]

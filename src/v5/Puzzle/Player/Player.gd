@@ -24,7 +24,9 @@ func start():
 	if (!started):
 		started = true
 		playing = true
-		tasks = get_node("/root/Global").tasks
+		print('TASKS')
+		print(Global.tasks)
+		tasks = Global.tasks
 
 func updateSpriteDirection():
 	match(directions[currentDirection]):
@@ -53,9 +55,22 @@ func rotate(command):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("INICIOU AQUI")
+	print(get_node("/root/Global"))
+	print(get_node("/root/Global").tasks)
 	get_node("/root/Global").connect("playing", self, "start")
 	
 func run(currentTask):
+	if (!!get_parent() && get_parent().status != 'none'): 
+		return
+		
+	if (!!get_tree()):
+		yield(get_tree().create_timer(1.5), "timeout")
+		
+#	if (get_node("/root/Global").current_amount_of_continues == 0):
+#		playing = false
+#		return
+		
 	var x = tasks[currentTask]
 	if (x == 'turn' || x == 'turn_anti'):
 		rotate(x)
@@ -67,7 +82,7 @@ func run(currentTask):
 			"down":
 				target.y += tilemap
 				$Sprite.play("down")
-			"right":
+			"right":	
 				target.x += tilemap
 				$Sprite.play("right")
 			"left":
@@ -77,13 +92,14 @@ func run(currentTask):
 	# Set player velocity according to target and speed
 	velocity = position.direction_to(target) * speed
 		
-	print(tasks[currentTask])
-	yield(get_tree().create_timer(1.5), "timeout")
 	if (currentTask < len(tasks) - 1):
+		print(currentTask - len(tasks) - 1)
 		run(currentTask + 1)
 	else:
+		started = false
+		if (!!get_parent()):
+			get_parent().get_node("HUD").subtractContinues()
 		emit_signal("finishedRun")
-		playing = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
