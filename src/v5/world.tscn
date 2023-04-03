@@ -665,7 +665,7 @@ extents = Vector2( 6.25, 5.78125 )
 extents = Vector2( 6, 5 )
 
 [sub_resource type="RectangleShape2D" id=20]
-extents = Vector2( 7.5, 5.5 )
+extents = Vector2( 7.5, 8 )
 
 [node name="world" type="Node2D"]
 pause_mode = 2
@@ -1053,7 +1053,7 @@ shape = SubResource( 19 )
 [node name="casinha5" type="Area2D" parent="."]
 
 [node name="casinha5Collision" type="CollisionShape2D" parent="casinha5"]
-position = Vector2( 500, 107 )
+position = Vector2( 500, 110 )
 shape = SubResource( 20 )
 
 [connection signal="body_entered" from="Npc3/Area2D" to="." method="_on_Area2D_body_entered"]
@@ -1061,6 +1061,7 @@ shape = SubResource( 20 )
 [connection signal="body_exited" from="Npc1/Npc1Colision" to="." method="_on_Npc1Colision_body_exited"]
 [connection signal="frame_changed" from="placaF1" to="." method="_on_placaF1_frame_changed"]
 [connection signal="body_entered" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_entered"]
+[connection signal="body_exited" from="placaF1/PlacaFase1" to="." method="_on_PlacaFase1_body_exited"]
 [connection signal="body_entered" from="casinha1" to="." method="_on_casinha1_body_entered"]
 [connection signal="body_exited" from="casinha1" to="." method="_on_casinha1_body_exited"]
 [connection signal="body_entered" from="casinha2" to="." method="_on_casinha2_body_entered"]
