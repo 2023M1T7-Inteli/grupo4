@@ -1,0 +1,67 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680568742.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680568742.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "E aí, jovem Alaventureiro! Aqui é a Marta, conterrânea sua de Alagoas e seis vezes eleita a melhor jogadora de futebol do mundo pela FIFA."
+		},
+		{
+			"character": "character-1680568742.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Nesse cenário, tu podes conhecer um pouco da minha história. Bora? "
+		},
+		{
+			"choice": "Claro!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1680568742.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu sou a Marta Vieira da Silva, uma jogadora de futebol brasileira nascida em Dois Riachos, Alagoas, em 1986. Desde criança, eu já amava o futebol e sonhava em ser uma jogadora profissional.\nEu comecei minha carreira jogando em clubes de Alagoas e de outros estados brasileiros, e fui me destacando cada vez mais.\n Em 2004, com apenas 18 anos, eu fui convocada pela primeira vez para a seleção brasileira de futebol feminino, e desde então representei o Brasil em diversas competições internacionais.\nDurante minha carreira, eu sempre mantive uma forte relação com o estado de Alagoas. Eu visitei minha cidade natal diversas vezes e sempre ajudei em campanhas beneficentes para a população local. \nAlém disso, eu tenho um projeto social chamado \"Instituto Marta Vieira da Silva\", que tem como objetivo incentivar a prática esportiva entre crianças e jovens em Alagoas e em outras regiões do Brasil.\nEu sou muito grata por ter nascido em Alagoas, e a minha história de vida é uma prova de que é possível realizar seus sonhos, independentemente de onde você nasceu. \nEu sempre serei uma representante orgulhosa do meu estado e farei tudo o que estiver ao meu alcance para ajudar a comunidade local.\n"
+		},
+		{
+			"choice": "Quem sabe em outro momento…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680568804.json",
+		"name": "Npc6"
+	}
+}

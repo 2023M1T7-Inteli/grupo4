@@ -1,0 +1,67 @@
+{
+	"events": [
+		{
+			"animation": "back_in_down.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680568444.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680568444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Bem-vindo, jovem Alaventureiro! Eu, Graciliano Ramos, sou um antigo escritor alagoano que sempre se encantou com a vida das pessoas humildes do sertão nordestino.]\n"
+		},
+		{
+			"character": "character-1680568444.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Agora, por aqui, tu podes conhecer um pouco da minha história. Gostaria de me conhecer brevemente? "
+		},
+		{
+			"choice": "Claro!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1680568444.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu sou Graciliano Ramos, um escritor alagoano nascido em Quebrangulo em 1892. A minha obra é marcada por um estilo objetivo e realista, que retrata de forma crua e honesta a vida no Nordeste brasileiro.\nAo longo da minha vida, eu mantive uma forte relação com o estado de Alagoas. Trabalhei como prefeito de Palmeira dos Índios e como diretor da Imprensa Oficial de Alagoas. Também escrevi muitos livros que se passam no estado, como \"Vidas Secas\" e \"Angústia\".\nA minha obra retrata a dureza da vida dos sertanejos alagoanos, e reflete a minha própria experiência de vida. Apesar das dificuldades, eu sempre mantive uma conexão profunda com a minha terra natal e com o povo alagoano.\nDurante o período da Ditadura Vargas, eu tive uma relação conturbada com o estado, mas mesmo assim continuei escrevendo e retratando a vida em Alagoas.\n Eu sou considerado um dos maiores escritores brasileiros de todos os tempos, e um dos mais importantes representantes da literatura alagoana. Para mim, a literatura é uma forma de dar voz aos que não têm voz, e de retratar a realidade de forma autêntica e honesta."
+		},
+		{
+			"choice": "Quem sabe em outro momento…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680568517.json",
+		"name": "Npc5"
+	}
+}

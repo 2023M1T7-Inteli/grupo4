@@ -1,7 +1,5 @@
 extends Node2D
 
-
-
 var casx1 = false
 var casx2 = false
 var casx3 = false

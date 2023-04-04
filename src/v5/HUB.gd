@@ -36,7 +36,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
-		$casinha1.pause_mode = Node.PAUSE_MODE_INHERIT
+		$casinha1.pause_mode = Node.PAUSE_MODE_STOP
 		$casinha1/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha1/Player.position = Vector2(15,6)
 		$casinha1/Player/Camera2D.current = true
