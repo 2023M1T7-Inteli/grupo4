@@ -9,8 +9,9 @@ func _ready():
 func _on_Resposta1_pressed():
 	resp = 1
 	get_tree().current_scene.add_child(resposta1)
-
-	
+	if resp == 1:
+		Global.pontos += 5
+		
 func _on_Resposta2_pressed():
 	resp = 0
 	get_tree().current_scene.add_child(resposta2)

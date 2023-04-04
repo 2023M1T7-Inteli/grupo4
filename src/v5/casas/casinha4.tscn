@@ -290,6 +290,7 @@ points = PoolVector2Array( 0, 8, 16, 8, 16, 16, 0, 16 )
 extents = Vector2( 6, 7.625 )
 
 [node name="casinha4" type="Node2D"]
+pause_mode = 2
 script = ExtResource( 5 )
 
 [node name="telapreta" type="TileMap" parent="."]

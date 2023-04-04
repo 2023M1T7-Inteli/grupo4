@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/hud2.png" type="Texture" id=1]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow.png" type="Texture" id=2]
@@ -19,6 +19,10 @@
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/turn/turn_pressed.png" type="Texture" id=17]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/turn_anti/turn_anti_pressed.png" type="Texture" id=18]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/hudCommands.png" type="Texture" id=19]
+[ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=20]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 20 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 5 )
@@ -250,11 +254,12 @@ margin_right = 910.52
 margin_bottom = 572.2
 
 [node name="PlaysLeft" type="RichTextLabel" parent="."]
-margin_left = 31.0
-margin_top = 45.0
-margin_right = 71.0
-margin_bottom = 59.0
-rect_scale = Vector2( 6, 6 )
+margin_left = 21.0
+margin_top = 47.0
+margin_right = 61.0
+margin_bottom = 61.0
+rect_scale = Vector2( 4, 4 )
+custom_fonts/normal_font = SubResource( 1 )
 text = "3"
 scroll_active = false
 

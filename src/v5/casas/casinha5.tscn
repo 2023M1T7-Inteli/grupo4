@@ -290,6 +290,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 8, 16, 8 )
 extents = Vector2( 8.5, 7.125 )
 
 [node name="casinha5" type="Node2D"]
+pause_mode = 2
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]

@@ -54,6 +54,7 @@ func _on_casinha5_body_exited(body):
 	casx5 = false
 	
 func _process(delta):
+	
 	if startx == true and Input.is_action_just_pressed("ui_accept"):
 		get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
 		

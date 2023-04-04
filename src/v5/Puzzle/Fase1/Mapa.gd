@@ -24,6 +24,7 @@ func _on_Area2D_body_entered(body):
 	
 #change scene to winner scene when the Area2D body enter the respective colision
 func _on_vitoria_body_entered(body):
+	Global.pontos += 10
 	status = 'won'
 	var winnerScene = load("res://Puzzle/Interface/Scenes/WinnerScene/winnerScene.tscn").instance()
 	winnerScene.next_phase = 2

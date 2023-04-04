@@ -4,6 +4,7 @@ var continues = 1
 var current_amount_of_continues = continues
 var current_scene = null
 var tasks = []
+var pontos = 0
 
 signal playing
 

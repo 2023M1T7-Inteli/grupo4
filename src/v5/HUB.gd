@@ -11,7 +11,7 @@ func _ready():
 	$casinha5/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
 	$casinha1/Player/Camera2D.limit_left = 696
-	$casinha1/Player/Camera2D.limit_top = 119
+	$casinha1/Player/Camera2D.limit_top = 127
 	$casinha1/Player/Camera2D.limit_right = 979
 	$casinha1/Player/Camera2D.limit_bottom = 307
 	$casinha2/Player/Camera2D.limit_left = 16
