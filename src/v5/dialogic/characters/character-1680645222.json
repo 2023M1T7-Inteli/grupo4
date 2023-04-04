@@ -1,0 +1,21 @@
+{
+	"color": "#ff005eff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1680645222.json",
+	"mirror_portraits": false,
+	"name": "Zumbi dos Palmares",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": -100,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://imagens/Zumbi dos Palmares (2).png"
+		}
+	],
+	"scale": 7,
+	"theme": ""
+}

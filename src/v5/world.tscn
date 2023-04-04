@@ -772,12 +772,12 @@ format = 1
 tile_data = PoolIntArray( -917457, 5, 0, 655386, 4, 0, 983124, 6, 0, 983155, 7, 0 )
 
 [node name="Placa2" type="Sprite" parent="."]
-position = Vector2( 443, 155 )
+position = Vector2( 447, 155 )
 scale = Vector2( 0.002, 0.002 )
 texture = ExtResource( 19 )
 
 [node name="Placa3" type="Sprite" parent="Placa2"]
-position = Vector2( -166000, -19500 )
+position = Vector2( -166000, -14500 )
 texture = ExtResource( 19 )
 offset = Vector2( 78500, 3500 )
 
@@ -1040,15 +1040,15 @@ position = Vector2( 313, -208 )
 shape = SubResource( 11 )
 
 [node name="CollisionShape2D58" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 267, 124.25 )
+position = Vector2( 271, 134 )
 shape = SubResource( 21 )
 
 [node name="CollisionShape2D59" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 342, 169 )
+position = Vector2( 346, 179 )
 shape = SubResource( 22 )
 
 [node name="CollisionShape2D60" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 441.75, 156 )
+position = Vector2( 446, 156 )
 shape = SubResource( 23 )
 
 [node name="placaF1" type="Sprite" parent="."]

@@ -6,7 +6,7 @@ signal touch_left(pressing)
 var touch_right = false
 var touch_up = false
 var touch_down = false
-
+var touch_enter = false
 func _ready():
 	pass # Replace with function body.
 
@@ -34,3 +34,9 @@ func _on_Down_pressed():
 func _on_Down_released():
 	touch_down = false
 	
+func _on_enter_pressed():
+	var touch_enter = true
+
+
+func _on_enter_released():
+	var touch_enter = false
