@@ -35,3 +35,6 @@ func _on_quitBtn_pressed():
 #quit the game
 	get_tree().quit()
 	
+func _on_TextureButton_pressed():
+	var creditos = load("res://tela inicial completa/creditos.tscn").instance()
+	get_tree().current_scene.add_child(creditos)
