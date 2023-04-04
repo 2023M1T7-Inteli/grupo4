@@ -8,7 +8,7 @@
 
 ## Alaventureiros
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">André Hutzler</a>, <a href="https://www.linkedin.com/in/victorbarq/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in//">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/victorbarq/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/victorbarq/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>
+## Integrantes: <a href="https://www.linkedin.com/in//">André Hutzler</a>, <a href="https://www.linkedin.com/in//">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in//">Marcelo Sitton</a>
 
 ## Descrição
 
