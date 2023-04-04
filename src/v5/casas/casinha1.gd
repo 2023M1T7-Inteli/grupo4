@@ -16,7 +16,6 @@ func _process(delta):
 	if newDialog.has_current_dialog_node() == true:
 		get_node("Player").moving = false
 		self.pause_mode= Node.PAUSE_MODE_STOP
-		
 	else:
 		get_node("Player").moving = true
 		self.pause_mode= Node.PAUSE_MODE_INHERIT
