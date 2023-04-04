@@ -10,6 +10,11 @@ func _ready():
 	$casinha4/Player/Camera2D.current = false
 	$casinha5/Player/Camera2D.current = false
 	$world/Player/Camera2D.current = true
+	$casinha1/Player.position = Vector2(1000,1000)
+	$casinha2/Player.position = Vector2(1000,1000)
+	$casinha3/Player.position = Vector2(1000,1000)
+	$casinha4/Player.position = Vector2(1000,1000)
+	$casinha5/Player.position = Vector2(1000,1000)
 	$casinha1/Player/Camera2D.limit_left = 696
 	$casinha1/Player/Camera2D.limit_top = 127
 	$casinha1/Player/Camera2D.limit_right = 979
@@ -36,6 +41,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$world/Player.position = Vector2(-1000,-1000)
 		$casinha1.pause_mode = Node.PAUSE_MODE_STOP
 		$casinha1/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha1/Player.position = Vector2(15,6)
@@ -46,6 +52,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$world/Player.position = Vector2(-1000,-1000)
 		$casinha2.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha2/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha2/Player.position = Vector2(9,67)
@@ -56,6 +63,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$world/Player.position = Vector2(-1000,-1000)
 		$casinha3.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha3/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha3/Player.position = Vector2(1,61)
@@ -66,6 +74,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$world/Player.position = Vector2(-1000,-1000)
 		$casinha4.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha4/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha4/Player.position = Vector2(1,61)
@@ -76,6 +85,7 @@ func _process(delta):
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
 		$world.pause_mode = Node.PAUSE_MODE_STOP
+		$world/Player.position = Vector2(-1000,-1000)
 		$casinha5.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha5/Player.pause_mode = Node.PAUSE_MODE_INHERIT
 		$casinha5/Player.position = Vector2(1,60)

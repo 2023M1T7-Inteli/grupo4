@@ -10,7 +10,7 @@ var cas2 = false
 var cas3 = false
 var cas4 = false
 var cas5 = false
-var startx = false
+var start = false
 #preload control scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
 
@@ -52,10 +52,6 @@ func _on_casinha5_body_exited(body):
 	casx5 = false
 	
 func _process(delta):
-	
-	if startx == true and Input.is_action_just_pressed("ui_accept"):
-		get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
-		
 	if casx5 == true and Input.is_action_just_pressed("ui_accept"):
 		cas5 = true
 		
@@ -102,7 +98,11 @@ func _on_placaTutorial_body_exited(body):
 	get_tree().current_scene.remove_child(preloadMensagem)
 	
 func _on_PlacaFase1_body_entered(body):
-	startx = true
+	start == true
+	ScreenTransition.get_child(0).get_child(0).play("transition_out")
+	yield(get_tree().create_timer(1),"timeout")
+	get_tree().change_scene("res://Puzzle/Fase1/Mapa.tscn")
+	start == false
 
 func _on_Npc1Colision_body_entered(body):
 	add_child(newDialog.start('Npc1'))
@@ -110,5 +110,3 @@ func _on_Npc1Colision_body_entered(body):
 func _on_Area2D_body_entered(body):
 	add_child(newDialog.start('Npc3'))
 
-func _on_PlacaFase1_body_exited(body):
-	startx = false
