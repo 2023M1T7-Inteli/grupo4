@@ -131,4 +131,4 @@ margin_right = 162.0
 margin_bottom = 162.0
 
 [connection signal="pressed" from="btnRestart" to="." method="_on_btnRestart_pressed"]
-[connection signal="pressed" from="PixelCasinha/btnMap" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="PixelCasinha/btnMap" to="." method="_on_btnMap_pressed"]
