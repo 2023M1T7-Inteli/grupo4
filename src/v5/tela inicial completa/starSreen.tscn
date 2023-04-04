@@ -3,7 +3,7 @@
 [ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://tela inicial completa/starSreen.gd" type="Script" id=2]
 [ext_resource path="res://imagens/mapaTela.imagem.jpeg" type="Texture" id=3]
-[ext_resource path="res://imagens/inconeBotaoCreditos.png" type="Texture" id=4]
+[ext_resource path="res://imagens/iconeBotaoCreditos.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
@@ -119,16 +119,16 @@ theme = SubResource( 7 )
 custom_fonts/font = SubResource( 8 )
 text = "Alaventura"
 
-[node name="InconeBotaoCreditos" type="Sprite" parent="."]
-position = Vector2( 94, 519 )
-scale = Vector2( 0.105, 0.105 )
+[node name="IconeBotaoCreditos" type="Sprite" parent="."]
+position = Vector2( 88.75, 523.25 )
+scale = Vector2( 0.095, 0.095 )
 texture = ExtResource( 4 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 58.0
-margin_top = 485.0
-margin_right = 130.0
-margin_bottom = 554.0
+margin_left = 55.0
+margin_top = 489.0
+margin_right = 121.0
+margin_bottom = 557.0
 
 [connection signal="pressed" from="controls/startBtn" to="." method="_on_startBtn_pressed"]
 [connection signal="pressed" from="controls/controlsBtn" to="." method="_on_controlsBtn_pressed"]
