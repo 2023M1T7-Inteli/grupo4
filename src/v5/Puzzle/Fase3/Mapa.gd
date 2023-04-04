@@ -20,6 +20,8 @@ func _on_TextureButton_pressed():
 func _on_Area2D_body_entered(body):
 	status = 'lost'
 	var winnerScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
+	winnerScene.next_phase = 4
+	winnerScene.current_phase = 3
 	get_tree().current_scene.add_child(winnerScene)
 	get_node("HUD").resetList() #reset the comands list when the player lose the game or reset it
 	
