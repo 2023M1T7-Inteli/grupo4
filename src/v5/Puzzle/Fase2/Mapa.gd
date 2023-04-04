@@ -26,7 +26,7 @@ func _on_Area2D_body_entered(body):
 func _on_vitoria_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	Global.pontos += 10
 	status = 'won'
-	var winnerScene = load("res://Puzzle/Interface/Scenes/EndingScene/endingScene.tscn").instance()
+	var winnerScene = load("res://Puzzle/Interface/Scenes/WinnerScene/winnerScene.tscn").instance()
 	winnerScene.next_phase = 3
 	winnerScene.current_phase = 2
 	
