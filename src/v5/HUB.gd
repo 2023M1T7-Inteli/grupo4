@@ -109,14 +109,39 @@ func _process(delta):
 				 # Updates the Player position based on the "casa" they are leaving.
 				if a == 1:
 					$world/Player.position = Vector2(-23,-31)
+					$casinha1/Player.position = Vector2(1000,1000)
+					$casinha2/Player.position = Vector2(1000,1000)
+					$casinha3/Player.position = Vector2(1000,1000)
+					$casinha4/Player.position = Vector2(1000,1000)
+					$casinha5/Player.position = Vector2(1000,1000)
 				if a == 2:
 					$world/Player.position = Vector2(-46,48)
+					$casinha1/Player.position = Vector2(1000,1000)
+					$casinha2/Player.position = Vector2(1000,1000)
+					$casinha3/Player.position = Vector2(1000,1000)
+					$casinha4/Player.position = Vector2(1000,1000)
+					$casinha5/Player.position = Vector2(1000,1000)
 				if a == 3:
 					$world/Player.position = Vector2(219,-5)
+					$casinha1/Player.position = Vector2(1000,1000)
+					$casinha2/Player.position = Vector2(1000,1000)
+					$casinha3/Player.position = Vector2(1000,1000)
+					$casinha4/Player.position = Vector2(1000,1000)
+					$casinha5/Player.position = Vector2(1000,1000)
 				if a == 4:
 					$world/Player.position = Vector2(71,-128)
+					$casinha1/Player.position = Vector2(1000,1000)
+					$casinha2/Player.position = Vector2(1000,1000)
+					$casinha3/Player.position = Vector2(1000,1000)
+					$casinha4/Player.position = Vector2(1000,1000)
+					$casinha5/Player.position = Vector2(1000,1000)
 				if a == 5:
 					$world/Player.position = Vector2(342,-25)
+					$casinha1/Player.position = Vector2(1000,1000)
+					$casinha2/Player.position = Vector2(1000,1000)
+					$casinha3/Player.position = Vector2(1000,1000)
+					$casinha4/Player.position = Vector2(1000,1000)
+					$casinha5/Player.position = Vector2(1000,1000)
 				# Sets the main world's Camera2D as the current camera.
 				$world/Player/Camera2D.current = true
 				 # Sets the "casa" transition flag to false.
