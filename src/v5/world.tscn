@@ -702,6 +702,7 @@ position = Vector2( 46, -3 )
 
 [node name="YSort" type="YSort" parent="."]
 position = Vector2( -2, -2 )
+scale = Vector2( 1.04631, 0.968468 )
 
 [node name="Npc3" type="Sprite" parent="."]
 position = Vector2( 288, 181 )
