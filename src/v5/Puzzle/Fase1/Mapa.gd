@@ -37,5 +37,7 @@ func _on_vitoria_body_entered(body):
 
 func _on_Player_finishedRun():
 	if status == 'none':
-		var winnerScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
-		get_tree().current_scene.add_child(winnerScene)
+		var loserScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
+		loserScene.next_phase = 2
+		loserScene.current_phase = 1
+		get_tree().current_scene.add_child(loserScene)

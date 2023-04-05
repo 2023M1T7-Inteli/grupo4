@@ -3,6 +3,7 @@ extends Node
 var continues = 1
 var current_amount_of_continues = continues
 var current_scene = null
+var status = 'none'
 var tasks = []
 var pontos = 0
 
@@ -24,11 +25,6 @@ func addTask(task):
 func setContinues(number):
 	continues = number
 	current_amount_of_continues = number
-	
-	if (number == 0):
-		var winnerScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
-		get_tree().current_scene.add_child(winnerScene)
-
 	
 func start():
 	print(tasks)

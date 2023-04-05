@@ -17,6 +17,7 @@ func _on_TextureButton_pressed():
 
 #change scene to loser scene when the Area2D body enter the respective colision
 func _on_Area2D_body_entered(body):
+	print('LOST')
 	status = 'lost'
 	var loserScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
 	loserScene.next_phase = 3
@@ -26,6 +27,7 @@ func _on_Area2D_body_entered(body):
 	
 #change scene to winner scene when the Area2D body enter the respective colision
 func _on_vitoria_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	print('VICTORY')
 	Global.pontos += 10
 	status = 'won'
 	var winnerScene = load("res://Puzzle/Interface/Scenes/WinnerScene/winnerScene.tscn").instance()
@@ -36,6 +38,10 @@ func _on_vitoria_body_shape_entered(body_rid, body, body_shape_index, local_shap
 	get_tree().current_scene.add_child(winnerScene)
 
 func _on_Player_finishedRun():
+	print('FINISHEDRUN')
+	yield(get_tree().create_timer(1.5), "timeout")
 	if status == 'none':
-		var winnerScene = load("res://winner & loser bgd/LoserScene.tscn").instance()
-		get_tree().current_scene.add_child(winnerScene)
+		var loserScene = load("res://Puzzle/Interface/Scenes/LoserScene/loserScene.tscn").instance()
+		loserScene.next_phase = 3
+		loserScene.current_phase = 2
+		get_tree().current_scene.add_child(loserScene)
