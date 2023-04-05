@@ -12,9 +12,8 @@
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
+O projeto Alaventura visa ensinar lógica de programação para crianças no contexto da cultura alagoana.
 <br><br>
 <p align="center">
 <img src="https://github.com/2023M1T7-Inteli/grupo4/blob/main/imagens/alaventura_start.jpg" width="600">
