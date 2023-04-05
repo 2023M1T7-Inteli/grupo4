@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Puzzle/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Puzzle/Fase3/Mapa.gd" type="Script" id=2]
+[ext_resource path="res://Interface/pontuação.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Puzzle/Fase1/Mapa.tres" type="TileSet" id=5]
 [ext_resource path="res://imagens/background-fase1.jpeg" type="Texture" id=7]
 [ext_resource path="res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn" type="PackedScene" id=8]
@@ -92,6 +93,8 @@ tile_data = PoolIntArray( 11, 5, 0, 65545, 5, 0, 65548, 5, 0, 65549, 5, 0, 65550
 position = Vector2( 511, 300 )
 scale = Vector2( 0.998047, 1 )
 texture = ExtResource( 9 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 3 )]
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

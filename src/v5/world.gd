@@ -81,13 +81,13 @@ func _process(delta):
 		var minigame = get_node("bau"+str(i)+"/CanvasLayer/ContaSoma")
 		
 		if i==1:
-			minigame.contaMat(1,"+",2,4)
+			minigame.contaMat(20,"+",6,26)
 		elif i==2:
-			minigame.contaMat(3,"-",2, 3)
+			minigame.contaMat(10,"-",2, 8)
 		elif i==3:
-			minigame.contaMat(4,"x",3, 10)
+			minigame.contaMat(6,"x",8, 48)
 		elif i==4:
-			minigame.contaMat(4,"/",2, 8)
+			minigame.contaMat(20,"/",4, 5)
 		
 		if get_node("bau"+str(i)+"/CanvasLayer").visible == true:
 			self.pause_mode= Node.PAUSE_MODE_STOP

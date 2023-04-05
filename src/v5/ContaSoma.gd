@@ -21,8 +21,7 @@ func _on_TextureButton_pressed():
 	
 func contaMat(x,s,y,a):
 	$Label2.text = "Quanto é " + str(x) + s + str(y)
-	$controls/Resposta1.text = str(x)
-	$controls2/Resposta2.text = str(a)
+	$controls2/Resposta2.text = str(resultado + 9)
 	if s == "+":
 		resultado = x + y
 	elif s == "-":

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Puzzle/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Puzzle/Fase2/Mapa.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Puzzle/Interface/AdicionarBlocoModal/AdicionarBloco.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Puzzle/Grid.png" type="Texture" id=9]
 [ext_resource path="res://Puzzle/Fase1/barco.png" type="Texture" id=10]
+[ext_resource path="res://Interface/pontuação.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 26.1563, 29.3125 )
@@ -128,6 +129,8 @@ texture = ExtResource( 6 )
 position = Vector2( 533, -65 )
 scale = Vector2( 0.0192308, 0.0192308 )
 texture = ExtResource( 10 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 11 )]
 
 [connection signal="finishedRun" from="Player" to="." method="_on_Player_finishedRun"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
