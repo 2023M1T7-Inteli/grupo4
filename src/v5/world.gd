@@ -1,25 +1,27 @@
 extends Node2D
-
+# Variables to check if the character is close to the houses
 var casx1 = false
 var casx2 = false
 var casx3 = false
 var casx4 = false
 var casx5 = false
+# Variables to check if the character interacted with the houses
 var cas1 = false
 var cas2 = false
 var cas3 = false
 var cas4 = false
 var cas5 = false
+# Variable to check if the transition scene has started
 var start = false
-#preload control scene
+# Preload the floating message scene
 var preloadMensagem = preload("res://tela inicial completa/Control.tscn").instance()
-
+# Dialogic node instance
 var newDialog = Dialogic 
 
 func _ready() -> void:
-	#quando entra no jogo incia o Dialogo.
+# when you enter the game, start the Dialog.
 	add_child(newDialog.start('Inicio'))
-		
+# Functions to detect the entry and exit of the character in the areas of the houses
 func _on_casinha1_body_entered(body):
 	casx1 = true
 
@@ -52,6 +54,7 @@ func _on_casinha5_body_exited(body):
 	casx5 = false
 	
 func _process(delta):
+# Function to process the character's interactions with the boxes and dialogues
 	if casx5 == true and Input.is_action_just_pressed("ui_accept"):
 		cas5 = true
 		
@@ -66,13 +69,15 @@ func _process(delta):
 		
 	if casx1 == true and Input.is_action_just_pressed("ui_accept"):
 		cas1 = true
-	
+
 	if newDialog.has_current_dialog_node() == true:
+	 # Check if there is a dialogue in progress, if there is, disable player movement
 		get_node("Player").moving = false
 	else:
 		get_node("Player").moving = true
 		
 	for i in range(1,5):
+		# Loop to configure the minigames for each chest
 		var minigame = get_node("bau"+str(i)+"/CanvasLayer/ContaSoma")
 		
 		if i==1:

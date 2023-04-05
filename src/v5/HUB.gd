@@ -1,9 +1,11 @@
 extends Node2D
-
+# Variable to store the number of "casas" in the game.
 var nCasas = 6
 
 func _ready():
+	# Plays the transition_in animation
 	ScreenTransition.get_child(0).get_child(0).play("transition_in")
+	 # Initializes Camera2D settings and Player positions for each "casa".
 	$casinha1/Player/Camera2D.current = false
 	$casinha2/Player/Camera2D.current = false
 	$casinha3/Player/Camera2D.current = false
@@ -37,6 +39,7 @@ func _ready():
 	$casinha5/Player/Camera2D.limit_bottom = 544
 	
 func _process(delta):
+	# The following if statements handle the transition into each "casa".
 	if $world.cas1:
 		ScreenTransition.get_child(0).get_child(0).play("transition_in")
 		$world/Player/Camera2D.current = false
@@ -96,10 +99,14 @@ func _process(delta):
 	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
 	for a in range(1,nCasas):
 		if get_node("casinha"+str(a)).i:
+			 # Plays the transition_in animation.
 				ScreenTransition.get_child(0).get_child(0).play("transition_in")
+				# Disables the Camera2D for the current "casa".
 				get_node("casinha"+str(a)+"/Player/Camera2D").current = false
+				 # Sets pause_mode for the main world and the "casa".
 				$world.pause_mode = Node.PAUSE_MODE_INHERIT
 				get_node("casinha"+str(a)).pause_mode = Node.PAUSE_MODE_STOP
+				 # Updates the Player position based on the "casa" they are leaving.
 				if a == 1:
 					$world/Player.position = Vector2(-23,-31)
 				if a == 2:
@@ -110,5 +117,7 @@ func _process(delta):
 					$world/Player.position = Vector2(71,-128)
 				if a == 5:
 					$world/Player.position = Vector2(342,-25)
+				# Sets the main world's Camera2D as the current camera.
 				$world/Player/Camera2D.current = true
+				 # Sets the "casa" transition flag to false.
 				get_node("casinha"+str(a)).i = false
