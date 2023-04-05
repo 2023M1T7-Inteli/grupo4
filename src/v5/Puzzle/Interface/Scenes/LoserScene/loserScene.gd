@@ -3,7 +3,6 @@ extends CanvasLayer
 export(int) var next_phase
 export(int) var current_phase
 
-
 func _ready():
 	if (next_phase == 4):
 		$Label.text = 'Você errou um comando :(\n\n Tente novamente para finalizar \n sua alaventura!'
