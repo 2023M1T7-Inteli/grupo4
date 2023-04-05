@@ -21,11 +21,8 @@ O projeto Alaventura visa ensinar lógica de programação para crianças no con
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
-May the force be with you!
+O principal objetivo do jogo é ensinar a linguagem de programação, linguagem computacional e lógica para crianças, proporcionando maior facilidade na aplicação desses conteúdos em sala de aula e tornando esse processo de aprendizagem mais dinâmico tanto para os alunos quanto para os professores. O Alaventura é intuitivo e interdisciplinar, ensinando cultura, história e geografia da região de Alagoas, e diferenciando também por utilizar múltiplas mecânicas, como setas, blocos de comando, resolução de equações e exploração com conquistas.
 <br><br>
 
 ## 🛠 Estrutura de pastas
@@ -38,33 +35,12 @@ May the force be with you!
   &emsp;|GDD.docx ou Documentação.docx<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
-  &emsp;|-->android<br>
   &emsp;|-->HTML<br>
 |-->imagens<br>
 |-->src<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
-
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
-
-Há também 4 pastas que seguem da seguinte forma:
-
-<b>docs</b>: Aqui serão colocados os arquivos compilados em HTML do jogo.
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
-
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
-
-<b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
-
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
-
 ## 🛠 Instalação
-
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
 
 <b>Windows:</b>
 
@@ -88,20 +64,19 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 ## 🗃 Histórico de lançamentos
 
-A cada atualização os detalhes devem ser lançados aqui.
-
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
+* 0.2.1 - 11/02/2023
+    * ADD:  GDD versão 1 e jogo versão 1
+* 0.2.0 - 25/02/2023
+    * ADD: GDD versão 2 e jogo versão 2
+* 0.1.1 - 11/03/2023
+    * ADD: GDD versão 3 e jogo versão 3
+* 0.1.0 - 25/03/2023
     * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+    * ADD: GDD versão 4 e jogo versão 4`
+* 0.0.1 - 05/04/2023
+    * CONSERTO: bugs das telas de feedback
+* 0.1.0 - 25/03/2023
+    * ADD: GDD versão 5 e jogo versão 5(final)
 
 ## 📋 Licença/License
 
