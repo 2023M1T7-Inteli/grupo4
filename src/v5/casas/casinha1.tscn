@@ -1805,3 +1805,4 @@ shape = SubResource( 42 )
 [connection signal="body_entered" from="saida1" to="." method="_on_saidaCasinha1_body_entered"]
 [connection signal="body_exited" from="saida1" to="." method="_on_saidaCasinha1_body_exited"]
 [connection signal="body_entered" from="Npc4" to="." method="_on_Npc4_body_entered"]
+[connection signal="body_exited" from="Npc4" to="." method="_on_Npc4_body_exited"]

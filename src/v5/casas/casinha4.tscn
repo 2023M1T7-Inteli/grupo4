@@ -622,5 +622,6 @@ position = Vector2( 160, 232.313 )
 shape = SubResource( 14 )
 
 [connection signal="body_entered" from="Sprite/Npc7" to="." method="_on_Npc7_body_entered"]
+[connection signal="body_exited" from="Sprite/Npc7" to="." method="_on_Npc7_body_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

@@ -17,8 +17,13 @@ func _process(delta):
 	else:
 		get_node("Player").moving = true
 		self.pause_mode= Node.PAUSE_MODE_INHERIT
+		
 	if x == true and Input.is_action_just_pressed("ui_accept"):
 		i = true
 
 func _on_Npc6_body_entered(body):
 	add_child(newDialog.start('Npc6'))
+
+
+func _on_Npc6_body_exited(body):
+	remove_child(newDialog.start('Npc7'))

@@ -958,5 +958,6 @@ position = Vector2( 160, 235 )
 shape = SubResource( 15 )
 
 [connection signal="body_entered" from="Sprite/Npc5" to="." method="_on_Npc5_body_entered"]
+[connection signal="body_exited" from="Sprite/Npc5" to="." method="_on_Npc5_body_exited"]
 [connection signal="body_entered" from="saida2" to="." method="_on_saida2_body_entered"]
 [connection signal="body_exited" from="saida2" to="." method="_on_saida2_body_exited"]

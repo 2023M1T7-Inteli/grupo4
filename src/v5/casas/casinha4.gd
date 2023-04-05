@@ -24,3 +24,7 @@ func _process(delta):
 
 func _on_Npc7_body_entered(body):
 	add_child(newDialog.start('Npc7'))
+
+
+func _on_Npc7_body_exited(body):
+	remove_child(newDialog.start('Npc7'))

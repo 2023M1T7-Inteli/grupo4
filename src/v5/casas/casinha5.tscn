@@ -693,5 +693,6 @@ position = Vector2( 160, 233.125 )
 shape = SubResource( 14 )
 
 [connection signal="body_entered" from="Dicionário/Npc8" to="." method="_on_Npc8_body_entered"]
+[connection signal="body_exited" from="Dicionário/Npc8" to="." method="_on_Npc8_body_exited"]
 [connection signal="body_entered" from="saida5" to="." method="_on_saida5_body_entered"]
 [connection signal="body_exited" from="saida5" to="." method="_on_saida5_body_exited"]
