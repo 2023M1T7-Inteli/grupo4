@@ -1,14 +1,14 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a img src= "https://s3.amazonaws.com/gupy5/production/companies/26702/images/jobs/2537199/20220705010027980_picture.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 # Projeto Alaventura
 
 ## Alaventureiros
 
-## Integrantes: <a href="https://www.linkedin.com/in//">André Hutzler</a>, <a href="https://www.linkedin.com/in//">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in//">Marcelo Sitton</a>
+## Integrantes: <a href="https://www.linkedin.com/in//">André Hutzler</a>, <a href="https://www.linkedin.com/in/antoniobfm/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in/marcelo-sitton-878248271/">Marcelo Sitton</a>
 
 ## Descrição
 
