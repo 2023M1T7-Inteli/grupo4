@@ -29,7 +29,6 @@ O principal objetivo do jogo é ensinar a linguagem de programação, linguagem 
 
 -Raiz<br>
 |<br>
-|-->docs<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
   &emsp;|GDD.docx ou Documentação.docx<br>
@@ -45,12 +44,12 @@ O principal objetivo do jogo é ensinar a linguagem de programação, linguagem 
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
+Encontre o alaventura.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 <b>HTML:</b>
 
 Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Encontre o alaventura.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
 ## 💻 Configuração para Desenvolvimento
 
@@ -74,9 +73,9 @@ Para abrir este projeto você necessita das seguintes ferramentas:
     * O primeiro lançamento adequado
     * ADD: GDD versão 4 e jogo versão 4`
 * 0.0.1 - 05/04/2023
-    * CONSERTO: bugs das telas de feedback
+    * CORREÇÃO: bugs das telas de feedback
 * 0.1.0 - 25/03/2023
-    * ADD: GDD versão 5 e jogo versão 5(final)
+    * ADD: GDD versão 5 e jogo versão 5 (final)
 
 ## 📋 Licença/License
 
@@ -86,8 +85,8 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+1. 
+2. 
+3. 
+4. https://docs.godotengine.org/pt_BR
+5. 
