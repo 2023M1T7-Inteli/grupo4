@@ -88,5 +88,6 @@ Aqui estão as referências usadas no projeto.
 1. https://visitealagoas.com/cultura/
 2. https://portokaete.com.br/2022/07/22/cultura-popular-alagoana-descubra-nossas-expressoes-artisticas/
 3. https://www.historiadealagoas.com.br/Hist%C3%B3riadeAlagoas/personalidades
-4. https://docs.godotengine.org/pt_BR
-5. Melodia do som: Djavan - Samurai (ft. Steve Wonder)
+4. https://www.kodable.com/
+5. https://docs.godotengine.org/pt_BR
+6. Melodia do som: Djavan - Samurai (ft. Steve Wonder)
