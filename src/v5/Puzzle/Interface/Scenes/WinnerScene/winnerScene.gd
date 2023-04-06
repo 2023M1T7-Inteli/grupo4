@@ -20,4 +20,4 @@ func _on_btnF2_pressed():
 
 	# change scene to World scene
 func _on_btnMap_pressed():
-	get_tree().change_scene("res://world.tscn")
+	get_tree().change_scene("res://HUB.tscn")

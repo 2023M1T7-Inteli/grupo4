@@ -40,7 +40,7 @@ func resetList():
 # Function called when the player clicks the return-to-map button
 func _on_returnMap_pressed():
 	# Changes the scene to the map
-	get_tree().change_scene("res://world.tscn")
+	get_tree().change_scene("res://HUB.tscn")
 
 # Adds tasks
 func _addTask(task):
