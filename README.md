@@ -23,6 +23,7 @@ O projeto Alaventura visa ensinar lógica de programação para crianças no con
 
 <br><br>
 💡 O principal objetivo do jogo é ensinar linguagem de programação, matemática e lógica computacional para crianças, proporcionando maior facilidade na aplicação desses conteúdos em sala de aula e tornando esse processo de aprendizagem mais dinâmico e divertido tanto para os alunos quanto para os professores. 
+<br><br>
 💡 O Alaventura é intuitivo e interdisciplinar, ensinando cultura, história e geografia da região de Alagoas, se diferenciando também por utilizar múltiplas mecânicas de jogo: como setas; blocos de comando; resolução de equações; e exploração com conquistas.
 <br><br>
 
