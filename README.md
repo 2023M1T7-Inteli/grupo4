@@ -12,7 +12,6 @@
 
 ## Descrição
 
-<br><br>
 O projeto Alaventura visa ensinar lógica de programação para crianças no contexto da cultura alagoana.
 <br><br>
 <p align="center">
