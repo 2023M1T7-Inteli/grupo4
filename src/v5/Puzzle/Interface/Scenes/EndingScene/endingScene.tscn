@@ -3,7 +3,7 @@
 [ext_resource path="res://imagens/bordaCurta.png" type="Texture" id=1]
 [ext_resource path="res://imagens/pixelCasinha.png" type="Texture" id=2]
 [ext_resource path="res://imagens/background vitoria.jpeg" type="Texture" id=3]
-[ext_resource path="res://Puzzle/Interface/Scenes/LoserScene/loserScene.gd" type="Script" id=4]
+[ext_resource path="res://Puzzle/Interface/Scenes/EndingScene/endingScene.gd" type="Script" id=4]
 [ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]

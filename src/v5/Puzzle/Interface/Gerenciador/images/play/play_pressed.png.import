@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/play.png-dc2ee8c641433a2391187d3ade7108bc.stex"
+path="res://.import/play_pressed.png-557c5cd1a4a749976f7a243f0ecc698c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Puzzle/Interface/Gerenciador/images/play.png"
-dest_files=[ "res://.import/play.png-dc2ee8c641433a2391187d3ade7108bc.stex" ]
+source_file="res://Puzzle/Interface/Gerenciador/images/play/play_pressed.png"
+dest_files=[ "res://.import/play_pressed.png-557c5cd1a4a749976f7a243f0ecc698c.stex" ]
 
 [params]
 

@@ -1,11 +1,11 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/hud2.png" type="Texture" id=1]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow.png" type="Texture" id=2]
 [ext_resource path="res://Puzzle/Interface/AddButton/AddButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/down/down_arrow_pressed.png" type="Texture" id=4]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/HUD.gd" type="Script" id=5]
-[ext_resource path="res://Puzzle/Interface/Gerenciador/images/play.png" type="Texture" id=6]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/play/play.png" type="Texture" id=6]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow_pressed.png" type="Texture" id=7]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/left/left_arrow.png" type="Texture" id=8]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/up/up_arrow.png" type="Texture" id=9]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/arrows/turn_anti/turn_anti_pressed.png" type="Texture" id=18]
 [ext_resource path="res://Puzzle/Interface/Gerenciador/images/hudCommands.png" type="Texture" id=19]
 [ext_resource path="res://PressStart2P.ttf" type="DynamicFontData" id=20]
+[ext_resource path="res://Puzzle/Interface/Gerenciador/images/play/play_pressed.png" type="Texture" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 20 )
@@ -238,12 +239,13 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 4 )
 
 [node name="Play" type="TextureButton" parent="."]
-margin_left = 713.0
-margin_top = 503.0
-margin_right = 783.0
-margin_bottom = 557.0
-rect_scale = Vector2( 1.814, 1.793 )
+margin_left = 720.783
+margin_top = 510.172
+margin_right = 842.783
+margin_bottom = 602.172
+rect_scale = Vector2( 0.895, 0.895 )
 texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 21 )
 
 [node name="returnMap" type="TextureButton" parent="."]
 anchor_right = 0.02

@@ -54,25 +54,25 @@ scale = Vector2( 0.6138, 0.680912 )
 texture = ExtResource( 3 )
 
 [node name="BordaCurta" type="Sprite" parent="."]
-position = Vector2( 605, 268.5 )
-scale = Vector2( 3.87868, 1.11397 )
+position = Vector2( 628, 268.5 )
+scale = Vector2( 4.69118, 1.11397 )
 texture = ExtResource( 4 )
 
 [node name="BordaCurta2" type="Sprite" parent="."]
-position = Vector2( -621, 46 )
-scale = Vector2( 2.93382, 1 )
+position = Vector2( -592.149, 46 )
+scale = Vector2( 2.65073, 1 )
 texture = ExtResource( 4 )
 offset = Vector2( 373.915, 266 )
 
 [node name="BordaCurta3" type="Sprite" parent="."]
-position = Vector2( -372, -14 )
-scale = Vector2( 2.93382, 1 )
+position = Vector2( -384.519, -14 )
+scale = Vector2( 3.06985, 1 )
 texture = ExtResource( 4 )
 offset = Vector2( 364.03, 326 )
 
 [node name="BordaCurta4" type="Sprite" parent="."]
-position = Vector2( 561, 337 )
-scale = Vector2( 2.11581, 1 )
+position = Vector2( 572, 337 )
+scale = Vector2( 2.54412, 1 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]

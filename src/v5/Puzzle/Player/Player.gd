@@ -24,8 +24,6 @@ func start():
 	if (!started):
 		started = true
 		playing = true
-		print('TASKS')
-		print(Global.tasks)
 		tasks = Global.tasks
 
 func updateSpriteDirection():
@@ -55,9 +53,6 @@ func rotate(command):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("INICIOU AQUI")
-	print(get_node("/root/Global"))
-	print(get_node("/root/Global").tasks)
 	get_node("/root/Global").connect("playing", self, "start")
 	
 func run(currentTask):
@@ -93,7 +88,6 @@ func run(currentTask):
 	velocity = position.direction_to(target) * speed
 		
 	if (currentTask < len(tasks) - 1):
-		print(currentTask - len(tasks) - 1)
 		run(currentTask + 1)
 	else:
 		started = false
@@ -104,7 +98,6 @@ func run(currentTask):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	if (playing == true && len(tasks) >= 1):
-		print("running")
 		run(0)
 		playing = false
 		# If the distance between the player and where it is going is more than 5

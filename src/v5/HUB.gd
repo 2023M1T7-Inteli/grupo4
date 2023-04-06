@@ -96,7 +96,7 @@ func _process(delta):
 		$world.cas5 = false
 		
 		
-	#quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
+	# Quando for aumentado o número de casas é necessario aumentar a variavel nCasas.
 	for a in range(1,nCasas):
 		if get_node("casinha"+str(a)).i:
 			 # Plays the transition_in animation.

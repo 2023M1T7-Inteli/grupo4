@@ -22,7 +22,6 @@ func _ready():
 
 func addTask(task):
 	# Function to add a task to the task list.
-	print(task)
 	if (len(tasks) < 8):
 		tasks.append(task)
 		
@@ -33,7 +32,6 @@ func setContinues(number):
 	
 func start():
 	# Function to start the game.
-	print(tasks)
 	emit_signal('playing')
 	
 func resetList():

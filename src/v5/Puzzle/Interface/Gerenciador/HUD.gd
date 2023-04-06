@@ -3,55 +3,64 @@ extends CanvasLayer
 var tasks = []
 export(int) var continues
 
-# Função que deleta todos os nodes filhos do node passado
+# Function that deletes all child nodes of the given node
 static func delete_children(node):
-	# Loopa pelos filhos do node passado
+	# Loops through the child nodes of the given node
 	for n in node.get_children():
-		# Remove o filho da vez
+		# Removes the current child node
 		node.remove_child(n)
 		
-		# Limpa ele da queue do loop para que não loope por onde não existe filho
+		# Frees the current child node from the loop queue to prevent looping through non-existent child nodes
 		n.queue_free()
 		
-#  
+# Function called when the node is ready to be used
 func _ready():
 	get_node("/root/Global").loadPhase()
 	get_node("/root/Global").tasks = []
 	get_node("/root/Global").setContinues(continues)
-	print(get_node("/root/Global").tasks)
 	$PlaysLeft.text = String(continues)
 
-# play the game
+# Function called when the player presses the play button
 func _on_Play_pressed():
+	# Calls the function that starts the game in Global
 	get_node('/root/Global').start()
 	
+# Subtracts 1 from the number of times the player can play in the same playthrough
 func subtractContinues():
+	# Updates the number of continues (subtracts 1)
 	Global.setContinues(Global.current_amount_of_continues - 1)
+	
+	# Updates the text that displays the number of times
 	$PlaysLeft.text = String(Global.current_amount_of_continues)
 
-# Reset all tasks
+# Resets all tasks
 func resetList():
 	get_node("/root/Global").resetList()
 
-# change scene to maps scene
+# Function called when the player clicks the return-to-map button
 func _on_returnMap_pressed():
+	# Changes the scene to the map
 	get_tree().change_scene("res://world.tscn")
 
+# Adds tasks
 func _addTask(task):
-	print('aaaaaaaaaa')
+	# If the player has already started the run, they cannot start it again
 	if get_parent().get_node('Player').started:
 		return
-	# Verifica se o global já ta cheio
+		
+	# Checks if the global is already full
 	var g = get_node('/root/Global')
 	
+	# If the task list inside the global is not full (less than 8)
 	if len(g.tasks) < 8:
-		# Adiciona task no global
+		# Adds the task to the global
 		get_node('/root/Global').addTask(task)
 		
 		tasks = get_node('/root/Global').tasks
 		
 		$TextureRect/HBoxContainer.get_child(len(tasks) - 1).updateButton(task)
 	
+# Functions called when the player presses the corresponding buttons
 func _on_Turn_pressed():
 	_addTask('turn')
 

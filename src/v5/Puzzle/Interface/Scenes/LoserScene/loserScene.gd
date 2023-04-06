@@ -4,10 +4,12 @@ export(int) var next_phase
 export(int) var current_phase
 
 func _ready():
+	# Verifies if the next phases is 4, which doesnt exist and indicates that player is on the last phase
 	if (next_phase == 4):
-		$Label.text = 'Você errou um comando :(\n\n Tente novamente para finalizar \n sua alaventura!'
+		$Label.text = 'Você errou um comando :( \n \n Tente novamente para finalizar \n sua alaventura!'
 	else:
-		$Label.text = 'Você errou um comando :(\n Tente novamente para seguir\n para a fase ' + String(next_phase)
+		# Standard message
+		$Label.text = 'Você errou um comando :( \n \n Tente novamente para seguir\n para a fase ' + String(next_phase)
 	$btnRestart.text = "Reiniciar fase " + String(current_phase)
 	pass 
 # change scene to maps scene

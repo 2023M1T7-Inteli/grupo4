@@ -94,6 +94,7 @@ position = Vector2( 511, 300 )
 scale = Vector2( 0.998047, 1 )
 texture = ExtResource( 6 )
 
+[connection signal="finishedRun" from="Player" to="." method="_on_Player_finishedRun"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="vitoria" to="." method="_on_vitoria_body_entered"]
