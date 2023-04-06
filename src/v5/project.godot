@@ -88,6 +88,7 @@ run/main_scene="res://tela inicial completa/starSreen.tscn"
 Global="*res://Puzzle/Global.gd"
 Interface="*res://Interface/Interface.gd"
 ScreenTransition="*res://screenTrasition/screenTransition.tscn"
+BackgroundMusic="*res://Audio/background_music.tscn"
 
 [display]
 
