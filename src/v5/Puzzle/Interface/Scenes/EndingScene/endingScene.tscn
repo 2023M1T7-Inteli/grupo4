@@ -82,7 +82,7 @@ custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Parabéns!
-Você completou esta Alaventure.
+Você completou esta Alaventura.
 
 Agora você pode voltar no mapa 
 e explorar o que te espera por lá"
