@@ -32,7 +32,7 @@ O projeto Alaventura visa ensinar lógica de programação para crianças no con
 |<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
+  &emsp;|GDD.docx<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
   &emsp;|-->HTML<br>
