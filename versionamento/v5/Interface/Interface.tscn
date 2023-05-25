@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Interface/images/left.png" type="Texture" id=1]
+[ext_resource path="res://Interface/Interface.gd" type="Script" id=2]
+[ext_resource path="res://imagens/enter.png" type="Texture" id=3]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+process_priority = 10
+script = ExtResource( 2 )
+
+[node name="Left" type="TouchScreenButton" parent="."]
+self_modulate = Color( 1, 1, 1, 0.431373 )
+position = Vector2( 755, 435 )
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 1 )
+passby_press = true
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.431373 )
+position = Vector2( 1007, 505 )
+rotation = -3.14159
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_right"
+
+[node name="Up" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.431373 )
+position = Vector2( 913, 351 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_up"
+
+[node name="Down" type="TouchScreenButton" parent="."]
+modulate = Color( 1, 1, 1, 0.431373 )
+position = Vector2( 840, 591 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )
+passby_press = true
+action = "ui_down"
+
+[node name="enter" type="TouchScreenButton" parent="."]
+self_modulate = Color( 1, 1, 1, 0.431373 )
+position = Vector2( 56, 432 )
+scale = Vector2( 0.0155303, 0.0155451 )
+normal = ExtResource( 3 )
+passby_press = true
+action = "ui_accept"
+
+[connection signal="pressed" from="Left" to="." method="_on_Left_pressed"]
+[connection signal="released" from="Left" to="." method="_on_Left_released"]
+[connection signal="pressed" from="Right" to="." method="_on_Right_pressed"]
+[connection signal="released" from="Right" to="." method="_on_Right_released"]
+[connection signal="pressed" from="Up" to="." method="_on_Up_pressed"]
+[connection signal="released" from="Up" to="." method="_on_Up_released"]
+[connection signal="pressed" from="Down" to="." method="_on_Down_pressed"]
+[connection signal="released" from="Down" to="." method="_on_Down_released"]
+[connection signal="pressed" from="enter" to="." method="_on_enter_pressed"]
+[connection signal="released" from="enter" to="." method="_on_enter_released"]

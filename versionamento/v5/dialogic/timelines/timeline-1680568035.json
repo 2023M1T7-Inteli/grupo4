@@ -1,0 +1,67 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1680567957.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1680567957.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eaí, alaventureiro! Sou eu, Carlinhos Maia, da Vila Primavera, Alagoas!"
+		},
+		{
+			"character": "character-1680567957.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Você topa conhecer um pouco sobre minha história nesse estado maravilhoso?\n"
+		},
+		{
+			"choice": "Claro!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1680567957.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eu sou o Carlinhos Maia, um influenciador digital e comediante nordestino que nasceu em Penedo, Alagoas, em 1993. \nEu sou muito grato por ter crescido em um lugar tão bonito e cheio de cultura como Alagoas, e é por isso que eu mantenho uma forte relação com o estado até hoje.\nDesde que comecei a fazer sucesso nas redes sociais, eu sempre mostrei a minha vida simples e engraçada do interior do Nordeste, e foi isso que me ajudou a ficar famoso. Mas eu nunca esqueci das minhas raízes,\n e sempre estive envolvido em ações sociais em Alagoas, ajudando a comunidade e promovendo o desenvolvimento local.\nEu tenho um carinho muito grande pela minha cidade natal, Penedo, e por outras localidades alagoanas, e por isso sempre ajudei em diversas campanhas beneficentes e projetos sociais. E sabe o que é mais legal?\n Além de ajudar a minha gente, eu também ajudo a promover o turismo em Alagoas, mostrando as belezas naturais e culturais do estado para o mundo todo.\nPor causa disso, eu fui homenageado pelo governo de Alagoas com o título de Embaixador do Turismo de Alagoas, e isso me enche de orgulho. Eu amo o meu estado e sempre vou fazer tudo que estiver ao meu alcance para ajudar a promovê-lo e desenvolvê-lo cada vez mais."
+		},
+		{
+			"choice": "Quem sabe em outro momento…",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680568035.json",
+		"name": "Npc4"
+	}
+}
