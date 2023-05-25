@@ -8,15 +8,13 @@
 
 ## Alaventureiros
 
-## Integrantes: <a href="https://www.linkedin.com/in//">André Hutzler</a>, <a href="https://www.linkedin.com/in/antoniobfm/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in/marcelo-sitton-878248271/">Marcelo Sitton</a>
+## Integrantes: <a href="https://www.linkedin.com/in/andré-hutzler-60aa28277//">André Hutzler</a>, <a href="https://www.linkedin.com/in/antoniobfm/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in/marcelo-sitton-878248271/">Marcelo Sitton</a>
 
 ## Descrição
 
 O projeto Alaventura visa ensinar lógica de programação para crianças no contexto da cultura alagoana.
 <br><br>
 <p align="center">
-<img src="https://github.com/2023M1T7-Inteli/grupo4/blob/main/imagens/alaventura_start.jpg" width="600">
-  <!-- Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a> -->
 </p>
 
 
