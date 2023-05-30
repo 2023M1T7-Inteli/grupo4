@@ -8,7 +8,7 @@
 
 ## Alaventureiros
 
-## Integrantes: <a href="https://www.linkedin.com/in/andré-hutzler-60aa28277//">André Hutzler</a>, <a href="https://www.linkedin.com/in/antoniobfm/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Vasquez </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in/marcelo-sitton-878248271/">Marcelo Sitton</a>
+## Integrantes: <a href="https://www.linkedin.com/in/andré-hutzler-60aa28277//">André Hutzler</a>, <a href="https://www.linkedin.com/in/antoniobfm/">Antônio Moraes</a>, <a href="https://www.linkedin.com/in/enzo-bressane-72a030219/">Enzo Bressane</a>,  <a href="https://www.linkedin.com/in/drielly-farias/">Drielly Farias</a>, <a href="https://www.linkedin.com/in/isabelle-beatriz-vasquez-oliveira-55a19626a/">Isabelle Oliveira </a>, <a href="https://www.linkedin.com/in/leonardokalid/">Leonardo Kalid</a>, <a href="https://www.linkedin.com/in/marcelo-sitton-878248271/">Marcelo Sitton</a>
 
 ## Descrição
 
@@ -42,8 +42,7 @@ O projeto Alaventura visa ensinar lógica de programação para crianças no con
 
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o alaventura.exe na pasta executáveis e execute-o como qualquer outro programa.
+Não há instalação! Só entrar no seguinte link:(https://2023m1t7-inteli.github.io/grupo4/)
 
 <b>HTML:</b>
 
@@ -78,6 +77,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 ## 📋 Licença/License
 
+- INTEGRANTES: André Hutzler, Antônio Moraes, Enzo Bressane, Drielly Farias, Isabelle Oliveira, Leonardo Kalid e Marcelo Sitton.
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
 ## 🎓 Referências
