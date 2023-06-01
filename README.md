@@ -42,12 +42,12 @@ O projeto Alaventura visa ensinar lógica de programação para crianças no con
 
 <b>Windows:</b>
 
-Não há instalação! Só entrar no seguinte link: (https://2023m1t7-inteli.github.io/grupo4/)
+Não há instalação! 
 
 <b>HTML:</b>
 
 Não há instalação!
-Encontre o alaventura.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Encontre o alaventura.html na pasta executáveis e execute-o como uma página WEB (através de algum browser), ou entre no seguinte link: https://2023m1t7-inteli.github.io/grupo4/
 
 ## 💻 Configuração para Desenvolvimento
 
